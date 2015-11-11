@@ -1,0 +1,4199 @@
+EESchema Schematic File Version 2
+LIBS:SparkFun
+LIBS:sn74ls47
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
+LIBS:cd4520b
+LIBS:cd4060
+LIBS:cd40103b
+LIBS:led-clock-no_micro-cache
+EELAYER 25 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title "LED Clock - No Microcontroller"
+Date ""
+Rev ""
+Comp "K-State E-Club"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SN74LS74 U1
+U 1 1 56393E3B
+P 11000 2950
+F 0 "U1" H 10600 3800 60  0000 C CNN
+F 1 "SN74LS74" H 10750 2400 60  0000 C CNN
+F 2 "" H 11000 2950 60  0000 C CNN
+F 3 "" H 11000 2950 60  0000 C CNN
+	1    11000 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 56394423
+P 1900 1150
+F 0 "D3" H 1900 1250 50  0000 C CNN
+F 1 "LED" H 1900 1050 50  0000 C CNN
+F 2 "" H 1900 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1900 1150 60  0001 C CNN
+	1    1900 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 56394C35
+P 2200 1150
+F 0 "D4" H 2200 1250 50  0000 C CNN
+F 1 "LED" H 2200 1050 50  0000 C CNN
+F 2 "" H 2200 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2200 1150 60  0001 C CNN
+	1    2200 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 56394CFC
+P 1300 1150
+F 0 "D1" H 1300 1250 50  0000 C CNN
+F 1 "LED" H 1300 1050 50  0000 C CNN
+F 2 "" H 1300 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1300 1150 60  0001 C CNN
+	1    1300 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 56394D02
+P 1600 1150
+F 0 "D2" H 1600 1250 50  0000 C CNN
+F 1 "LED" H 1600 1050 50  0000 C CNN
+F 2 "" H 1600 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1600 1150 60  0001 C CNN
+	1    1600 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56394F22
+P 1750 1600
+F 0 "R1" V 1830 1600 50  0000 C CNN
+F 1 "100" V 1750 1600 50  0000 C CNN
+F 2 "" V 1680 1600 30  0000 C CNN
+F 3 "" H 1750 1600 30  0000 C CNN
+	1    1750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 56394FAC
+P 1750 2000
+F 0 "R8" V 1830 2000 50  0000 C CNN
+F 1 "5" V 1750 2000 50  0000 C CNN
+F 2 "" V 1680 2000 30  0000 C CNN
+F 3 "" H 1750 2000 30  0000 C CNN
+	1    1750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D7
+U 1 1 56395F1A
+P 3100 1150
+F 0 "D7" H 3100 1250 50  0000 C CNN
+F 1 "LED" H 3100 1050 50  0000 C CNN
+F 2 "" H 3100 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3100 1150 60  0001 C CNN
+	1    3100 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D8
+U 1 1 56395F20
+P 3400 1150
+F 0 "D8" H 3400 1250 50  0000 C CNN
+F 1 "LED" H 3400 1050 50  0000 C CNN
+F 2 "" H 3400 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3400 1150 60  0001 C CNN
+	1    3400 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 56395F26
+P 2500 1150
+F 0 "D5" H 2500 1250 50  0000 C CNN
+F 1 "LED" H 2500 1050 50  0000 C CNN
+F 2 "" H 2500 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2500 1150 60  0001 C CNN
+	1    2500 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 56395F2C
+P 2800 1150
+F 0 "D6" H 2800 1250 50  0000 C CNN
+F 1 "LED" H 2800 1050 50  0000 C CNN
+F 2 "" H 2800 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2800 1150 60  0001 C CNN
+	1    2800 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56395F32
+P 2950 1600
+F 0 "R2" V 3030 1600 50  0000 C CNN
+F 1 "100" V 2950 1600 50  0000 C CNN
+F 2 "" V 2880 1600 30  0000 C CNN
+F 3 "" H 2950 1600 30  0000 C CNN
+	1    2950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56395F38
+P 2950 2000
+F 0 "R9" V 3030 2000 50  0000 C CNN
+F 1 "5" V 2950 2000 50  0000 C CNN
+F 2 "" V 2880 2000 30  0000 C CNN
+F 3 "" H 2950 2000 30  0000 C CNN
+	1    2950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D11
+U 1 1 56396467
+P 4300 1150
+F 0 "D11" H 4300 1250 50  0000 C CNN
+F 1 "LED" H 4300 1050 50  0000 C CNN
+F 2 "" H 4300 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4300 1150 60  0001 C CNN
+	1    4300 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 5639646D
+P 4600 1150
+F 0 "D12" H 4600 1250 50  0000 C CNN
+F 1 "LED" H 4600 1050 50  0000 C CNN
+F 2 "" H 4600 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4600 1150 60  0001 C CNN
+	1    4600 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 56396473
+P 3700 1150
+F 0 "D9" H 3700 1250 50  0000 C CNN
+F 1 "LED" H 3700 1050 50  0000 C CNN
+F 2 "" H 3700 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3700 1150 60  0001 C CNN
+	1    3700 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D10
+U 1 1 56396479
+P 4000 1150
+F 0 "D10" H 4000 1250 50  0000 C CNN
+F 1 "LED" H 4000 1050 50  0000 C CNN
+F 2 "" H 4000 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4000 1150 60  0001 C CNN
+	1    4000 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5639647F
+P 4150 1600
+F 0 "R3" V 4230 1600 50  0000 C CNN
+F 1 "100" V 4150 1600 50  0000 C CNN
+F 2 "" V 4080 1600 30  0000 C CNN
+F 3 "" H 4150 1600 30  0000 C CNN
+	1    4150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 56396485
+P 4150 2000
+F 0 "R10" V 4230 2000 50  0000 C CNN
+F 1 "5" V 4150 2000 50  0000 C CNN
+F 2 "" V 4080 2000 30  0000 C CNN
+F 3 "" H 4150 2000 30  0000 C CNN
+	1    4150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D15
+U 1 1 5639649C
+P 5500 1150
+F 0 "D15" H 5500 1250 50  0000 C CNN
+F 1 "LED" H 5500 1050 50  0000 C CNN
+F 2 "" H 5500 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5500 1150 60  0001 C CNN
+	1    5500 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D16
+U 1 1 563964A2
+P 5800 1150
+F 0 "D16" H 5800 1250 50  0000 C CNN
+F 1 "LED" H 5800 1050 50  0000 C CNN
+F 2 "" H 5800 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5800 1150 60  0001 C CNN
+	1    5800 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D13
+U 1 1 563964A8
+P 4900 1150
+F 0 "D13" H 4900 1250 50  0000 C CNN
+F 1 "LED" H 4900 1050 50  0000 C CNN
+F 2 "" H 4900 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4900 1150 60  0001 C CNN
+	1    4900 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D14
+U 1 1 563964AE
+P 5200 1150
+F 0 "D14" H 5200 1250 50  0000 C CNN
+F 1 "LED" H 5200 1050 50  0000 C CNN
+F 2 "" H 5200 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5200 1150 60  0001 C CNN
+	1    5200 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 563964B4
+P 5350 1600
+F 0 "R4" V 5430 1600 50  0000 C CNN
+F 1 "100" V 5350 1600 50  0000 C CNN
+F 2 "" V 5280 1600 30  0000 C CNN
+F 3 "" H 5350 1600 30  0000 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 563964BA
+P 5350 2000
+F 0 "R11" V 5430 2000 50  0000 C CNN
+F 1 "5" V 5350 2000 50  0000 C CNN
+F 2 "" V 5280 2000 30  0000 C CNN
+F 3 "" H 5350 2000 30  0000 C CNN
+	1    5350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D19
+U 1 1 56396CB9
+P 6700 1150
+F 0 "D19" H 6700 1250 50  0000 C CNN
+F 1 "LED" H 6700 1050 50  0000 C CNN
+F 2 "" H 6700 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6700 1150 60  0001 C CNN
+	1    6700 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D20
+U 1 1 56396CBF
+P 7000 1150
+F 0 "D20" H 7000 1250 50  0000 C CNN
+F 1 "LED" H 7000 1050 50  0000 C CNN
+F 2 "" H 7000 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7000 1150 60  0001 C CNN
+	1    7000 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D17
+U 1 1 56396CC5
+P 6100 1150
+F 0 "D17" H 6100 1250 50  0000 C CNN
+F 1 "LED" H 6100 1050 50  0000 C CNN
+F 2 "" H 6100 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6100 1150 60  0001 C CNN
+	1    6100 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D18
+U 1 1 56396CCB
+P 6400 1150
+F 0 "D18" H 6400 1250 50  0000 C CNN
+F 1 "LED" H 6400 1050 50  0000 C CNN
+F 2 "" H 6400 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6400 1150 60  0001 C CNN
+	1    6400 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 56396CD1
+P 6550 1600
+F 0 "R5" V 6630 1600 50  0000 C CNN
+F 1 "100" V 6550 1600 50  0000 C CNN
+F 2 "" V 6480 1600 30  0000 C CNN
+F 3 "" H 6550 1600 30  0000 C CNN
+	1    6550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 56396CD7
+P 6550 2000
+F 0 "R12" V 6630 2000 50  0000 C CNN
+F 1 "5" V 6550 2000 50  0000 C CNN
+F 2 "" V 6480 2000 30  0000 C CNN
+F 3 "" H 6550 2000 30  0000 C CNN
+	1    6550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D23
+U 1 1 56396CEE
+P 7900 1150
+F 0 "D23" H 7900 1250 50  0000 C CNN
+F 1 "LED" H 7900 1050 50  0000 C CNN
+F 2 "" H 7900 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7900 1150 60  0001 C CNN
+	1    7900 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D24
+U 1 1 56396CF4
+P 8200 1150
+F 0 "D24" H 8200 1250 50  0000 C CNN
+F 1 "LED" H 8200 1050 50  0000 C CNN
+F 2 "" H 8200 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8200 1150 60  0001 C CNN
+	1    8200 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D21
+U 1 1 56396CFA
+P 7300 1150
+F 0 "D21" H 7300 1250 50  0000 C CNN
+F 1 "LED" H 7300 1050 50  0000 C CNN
+F 2 "" H 7300 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7300 1150 60  0001 C CNN
+	1    7300 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D22
+U 1 1 56396D00
+P 7600 1150
+F 0 "D22" H 7600 1250 50  0000 C CNN
+F 1 "LED" H 7600 1050 50  0000 C CNN
+F 2 "" H 7600 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7600 1150 60  0001 C CNN
+	1    7600 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56396D06
+P 7750 1600
+F 0 "R6" V 7830 1600 50  0000 C CNN
+F 1 "100" V 7750 1600 50  0000 C CNN
+F 2 "" V 7680 1600 30  0000 C CNN
+F 3 "" H 7750 1600 30  0000 C CNN
+	1    7750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 56396D0C
+P 7750 2000
+F 0 "R13" V 7830 2000 50  0000 C CNN
+F 1 "5" V 7750 2000 50  0000 C CNN
+F 2 "" V 7680 2000 30  0000 C CNN
+F 3 "" H 7750 2000 30  0000 C CNN
+	1    7750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D27
+U 1 1 56396D23
+P 9100 1150
+F 0 "D27" H 9100 1250 50  0000 C CNN
+F 1 "LED" H 9100 1050 50  0000 C CNN
+F 2 "" H 9100 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9100 1150 60  0001 C CNN
+	1    9100 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D28
+U 1 1 56396D29
+P 9400 1150
+F 0 "D28" H 9400 1250 50  0000 C CNN
+F 1 "LED" H 9400 1050 50  0000 C CNN
+F 2 "" H 9400 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9400 1150 60  0001 C CNN
+	1    9400 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D25
+U 1 1 56396D2F
+P 8500 1150
+F 0 "D25" H 8500 1250 50  0000 C CNN
+F 1 "LED" H 8500 1050 50  0000 C CNN
+F 2 "" H 8500 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8500 1150 60  0001 C CNN
+	1    8500 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D26
+U 1 1 56396D35
+P 8800 1150
+F 0 "D26" H 8800 1250 50  0000 C CNN
+F 1 "LED" H 8800 1050 50  0000 C CNN
+F 2 "" H 8800 1150 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8800 1150 60  0001 C CNN
+	1    8800 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 56396D3B
+P 8950 1600
+F 0 "R7" V 9030 1600 50  0000 C CNN
+F 1 "100" V 8950 1600 50  0000 C CNN
+F 2 "" V 8880 1600 30  0000 C CNN
+F 3 "" H 8950 1600 30  0000 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 56396D41
+P 8950 2000
+F 0 "R14" V 9030 2000 50  0000 C CNN
+F 1 "5" V 8950 2000 50  0000 C CNN
+F 2 "" V 8880 2000 30  0000 C CNN
+F 3 "" H 8950 2000 30  0000 C CNN
+	1    8950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 563A3ED2
+P 9600 800
+F 0 "#PWR1" H 9600 650 50  0001 C CNN
+F 1 "+5V" H 9600 940 50  0000 C CNN
+F 2 "" H 9600 800 60  0000 C CNN
+F 3 "" H 9600 800 60  0000 C CNN
+	1    9600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR5
+U 1 1 563A458C
+P 11800 2150
+F 0 "#PWR5" H 11800 2000 50  0001 C CNN
+F 1 "+5V" H 11800 2290 50  0000 C CNN
+F 2 "" H 11800 2150 60  0000 C CNN
+F 3 "" H 11800 2150 60  0000 C CNN
+	1    11800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LS74 U2
+U 1 1 563A9438
+P 11000 5350
+F 0 "U2" H 10600 6200 60  0000 C CNN
+F 1 "SN74LS74" H 10750 4800 60  0000 C CNN
+F 2 "" H 11000 5350 60  0000 C CNN
+F 3 "" H 11000 5350 60  0000 C CNN
+	1    11000 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D31
+U 1 1 563A943E
+P 1900 3550
+F 0 "D31" H 1900 3650 50  0000 C CNN
+F 1 "LED" H 1900 3450 50  0000 C CNN
+F 2 "" H 1900 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1900 3550 60  0001 C CNN
+	1    1900 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D32
+U 1 1 563A9444
+P 2200 3550
+F 0 "D32" H 2200 3650 50  0000 C CNN
+F 1 "LED" H 2200 3450 50  0000 C CNN
+F 2 "" H 2200 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2200 3550 60  0001 C CNN
+	1    2200 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D29
+U 1 1 563A944A
+P 1300 3550
+F 0 "D29" H 1300 3650 50  0000 C CNN
+F 1 "LED" H 1300 3450 50  0000 C CNN
+F 2 "" H 1300 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1300 3550 60  0001 C CNN
+	1    1300 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D30
+U 1 1 563A9450
+P 1600 3550
+F 0 "D30" H 1600 3650 50  0000 C CNN
+F 1 "LED" H 1600 3450 50  0000 C CNN
+F 2 "" H 1600 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1600 3550 60  0001 C CNN
+	1    1600 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R15
+U 1 1 563A9456
+P 1750 4000
+F 0 "R15" V 1830 4000 50  0000 C CNN
+F 1 "100" V 1750 4000 50  0000 C CNN
+F 2 "" V 1680 4000 30  0000 C CNN
+F 3 "" H 1750 4000 30  0000 C CNN
+	1    1750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 563A945C
+P 1750 4400
+F 0 "R22" V 1830 4400 50  0000 C CNN
+F 1 "5" V 1750 4400 50  0000 C CNN
+F 2 "" V 1680 4400 30  0000 C CNN
+F 3 "" H 1750 4400 30  0000 C CNN
+	1    1750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D35
+U 1 1 563A9462
+P 3100 3550
+F 0 "D35" H 3100 3650 50  0000 C CNN
+F 1 "LED" H 3100 3450 50  0000 C CNN
+F 2 "" H 3100 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3100 3550 60  0001 C CNN
+	1    3100 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D36
+U 1 1 563A9468
+P 3400 3550
+F 0 "D36" H 3400 3650 50  0000 C CNN
+F 1 "LED" H 3400 3450 50  0000 C CNN
+F 2 "" H 3400 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3400 3550 60  0001 C CNN
+	1    3400 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D33
+U 1 1 563A946E
+P 2500 3550
+F 0 "D33" H 2500 3650 50  0000 C CNN
+F 1 "LED" H 2500 3450 50  0000 C CNN
+F 2 "" H 2500 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2500 3550 60  0001 C CNN
+	1    2500 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D34
+U 1 1 563A9474
+P 2800 3550
+F 0 "D34" H 2800 3650 50  0000 C CNN
+F 1 "LED" H 2800 3450 50  0000 C CNN
+F 2 "" H 2800 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2800 3550 60  0001 C CNN
+	1    2800 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R16
+U 1 1 563A947A
+P 2950 4000
+F 0 "R16" V 3030 4000 50  0000 C CNN
+F 1 "100" V 2950 4000 50  0000 C CNN
+F 2 "" V 2880 4000 30  0000 C CNN
+F 3 "" H 2950 4000 30  0000 C CNN
+	1    2950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 563A9480
+P 2950 4400
+F 0 "R23" V 3030 4400 50  0000 C CNN
+F 1 "5" V 2950 4400 50  0000 C CNN
+F 2 "" V 2880 4400 30  0000 C CNN
+F 3 "" H 2950 4400 30  0000 C CNN
+	1    2950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D39
+U 1 1 563A9486
+P 4300 3550
+F 0 "D39" H 4300 3650 50  0000 C CNN
+F 1 "LED" H 4300 3450 50  0000 C CNN
+F 2 "" H 4300 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4300 3550 60  0001 C CNN
+	1    4300 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D40
+U 1 1 563A948C
+P 4600 3550
+F 0 "D40" H 4600 3650 50  0000 C CNN
+F 1 "LED" H 4600 3450 50  0000 C CNN
+F 2 "" H 4600 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4600 3550 60  0001 C CNN
+	1    4600 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D37
+U 1 1 563A9492
+P 3700 3550
+F 0 "D37" H 3700 3650 50  0000 C CNN
+F 1 "LED" H 3700 3450 50  0000 C CNN
+F 2 "" H 3700 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3700 3550 60  0001 C CNN
+	1    3700 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D38
+U 1 1 563A9498
+P 4000 3550
+F 0 "D38" H 4000 3650 50  0000 C CNN
+F 1 "LED" H 4000 3450 50  0000 C CNN
+F 2 "" H 4000 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4000 3550 60  0001 C CNN
+	1    4000 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R17
+U 1 1 563A949E
+P 4150 4000
+F 0 "R17" V 4230 4000 50  0000 C CNN
+F 1 "100" V 4150 4000 50  0000 C CNN
+F 2 "" V 4080 4000 30  0000 C CNN
+F 3 "" H 4150 4000 30  0000 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 563A94A4
+P 4150 4400
+F 0 "R24" V 4230 4400 50  0000 C CNN
+F 1 "5" V 4150 4400 50  0000 C CNN
+F 2 "" V 4080 4400 30  0000 C CNN
+F 3 "" H 4150 4400 30  0000 C CNN
+	1    4150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D43
+U 1 1 563A94AA
+P 5500 3550
+F 0 "D43" H 5500 3650 50  0000 C CNN
+F 1 "LED" H 5500 3450 50  0000 C CNN
+F 2 "" H 5500 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5500 3550 60  0001 C CNN
+	1    5500 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D44
+U 1 1 563A94B0
+P 5800 3550
+F 0 "D44" H 5800 3650 50  0000 C CNN
+F 1 "LED" H 5800 3450 50  0000 C CNN
+F 2 "" H 5800 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5800 3550 60  0001 C CNN
+	1    5800 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D41
+U 1 1 563A94B6
+P 4900 3550
+F 0 "D41" H 4900 3650 50  0000 C CNN
+F 1 "LED" H 4900 3450 50  0000 C CNN
+F 2 "" H 4900 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4900 3550 60  0001 C CNN
+	1    4900 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D42
+U 1 1 563A94BC
+P 5200 3550
+F 0 "D42" H 5200 3650 50  0000 C CNN
+F 1 "LED" H 5200 3450 50  0000 C CNN
+F 2 "" H 5200 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5200 3550 60  0001 C CNN
+	1    5200 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R18
+U 1 1 563A94C2
+P 5350 4000
+F 0 "R18" V 5430 4000 50  0000 C CNN
+F 1 "100" V 5350 4000 50  0000 C CNN
+F 2 "" V 5280 4000 30  0000 C CNN
+F 3 "" H 5350 4000 30  0000 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 563A94C8
+P 5350 4400
+F 0 "R25" V 5430 4400 50  0000 C CNN
+F 1 "5" V 5350 4400 50  0000 C CNN
+F 2 "" V 5280 4400 30  0000 C CNN
+F 3 "" H 5350 4400 30  0000 C CNN
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D47
+U 1 1 563A94CE
+P 6700 3550
+F 0 "D47" H 6700 3650 50  0000 C CNN
+F 1 "LED" H 6700 3450 50  0000 C CNN
+F 2 "" H 6700 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6700 3550 60  0001 C CNN
+	1    6700 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D48
+U 1 1 563A94D4
+P 7000 3550
+F 0 "D48" H 7000 3650 50  0000 C CNN
+F 1 "LED" H 7000 3450 50  0000 C CNN
+F 2 "" H 7000 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7000 3550 60  0001 C CNN
+	1    7000 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D45
+U 1 1 563A94DA
+P 6100 3550
+F 0 "D45" H 6100 3650 50  0000 C CNN
+F 1 "LED" H 6100 3450 50  0000 C CNN
+F 2 "" H 6100 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6100 3550 60  0001 C CNN
+	1    6100 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D46
+U 1 1 563A94E0
+P 6400 3550
+F 0 "D46" H 6400 3650 50  0000 C CNN
+F 1 "LED" H 6400 3450 50  0000 C CNN
+F 2 "" H 6400 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6400 3550 60  0001 C CNN
+	1    6400 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R19
+U 1 1 563A94E6
+P 6550 4000
+F 0 "R19" V 6630 4000 50  0000 C CNN
+F 1 "100" V 6550 4000 50  0000 C CNN
+F 2 "" V 6480 4000 30  0000 C CNN
+F 3 "" H 6550 4000 30  0000 C CNN
+	1    6550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 563A94EC
+P 6550 4400
+F 0 "R26" V 6630 4400 50  0000 C CNN
+F 1 "5" V 6550 4400 50  0000 C CNN
+F 2 "" V 6480 4400 30  0000 C CNN
+F 3 "" H 6550 4400 30  0000 C CNN
+	1    6550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D51
+U 1 1 563A94F2
+P 7900 3550
+F 0 "D51" H 7900 3650 50  0000 C CNN
+F 1 "LED" H 7900 3450 50  0000 C CNN
+F 2 "" H 7900 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7900 3550 60  0001 C CNN
+	1    7900 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D52
+U 1 1 563A94F8
+P 8200 3550
+F 0 "D52" H 8200 3650 50  0000 C CNN
+F 1 "LED" H 8200 3450 50  0000 C CNN
+F 2 "" H 8200 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8200 3550 60  0001 C CNN
+	1    8200 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D49
+U 1 1 563A94FE
+P 7300 3550
+F 0 "D49" H 7300 3650 50  0000 C CNN
+F 1 "LED" H 7300 3450 50  0000 C CNN
+F 2 "" H 7300 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7300 3550 60  0001 C CNN
+	1    7300 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D50
+U 1 1 563A9504
+P 7600 3550
+F 0 "D50" H 7600 3650 50  0000 C CNN
+F 1 "LED" H 7600 3450 50  0000 C CNN
+F 2 "" H 7600 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7600 3550 60  0001 C CNN
+	1    7600 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R20
+U 1 1 563A950A
+P 7750 4000
+F 0 "R20" V 7830 4000 50  0000 C CNN
+F 1 "100" V 7750 4000 50  0000 C CNN
+F 2 "" V 7680 4000 30  0000 C CNN
+F 3 "" H 7750 4000 30  0000 C CNN
+	1    7750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 563A9510
+P 7750 4400
+F 0 "R27" V 7830 4400 50  0000 C CNN
+F 1 "5" V 7750 4400 50  0000 C CNN
+F 2 "" V 7680 4400 30  0000 C CNN
+F 3 "" H 7750 4400 30  0000 C CNN
+	1    7750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D55
+U 1 1 563A9516
+P 9100 3550
+F 0 "D55" H 9100 3650 50  0000 C CNN
+F 1 "LED" H 9100 3450 50  0000 C CNN
+F 2 "" H 9100 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9100 3550 60  0001 C CNN
+	1    9100 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D56
+U 1 1 563A951C
+P 9400 3550
+F 0 "D56" H 9400 3650 50  0000 C CNN
+F 1 "LED" H 9400 3450 50  0000 C CNN
+F 2 "" H 9400 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9400 3550 60  0001 C CNN
+	1    9400 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D53
+U 1 1 563A9522
+P 8500 3550
+F 0 "D53" H 8500 3650 50  0000 C CNN
+F 1 "LED" H 8500 3450 50  0000 C CNN
+F 2 "" H 8500 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8500 3550 60  0001 C CNN
+	1    8500 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D54
+U 1 1 563A9528
+P 8800 3550
+F 0 "D54" H 8800 3650 50  0000 C CNN
+F 1 "LED" H 8800 3450 50  0000 C CNN
+F 2 "" H 8800 3550 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8800 3550 60  0001 C CNN
+	1    8800 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R21
+U 1 1 563A952E
+P 8950 4000
+F 0 "R21" V 9030 4000 50  0000 C CNN
+F 1 "100" V 8950 4000 50  0000 C CNN
+F 2 "" V 8880 4000 30  0000 C CNN
+F 3 "" H 8950 4000 30  0000 C CNN
+	1    8950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R28
+U 1 1 563A9534
+P 8950 4400
+F 0 "R28" V 9030 4400 50  0000 C CNN
+F 1 "5" V 8950 4400 50  0000 C CNN
+F 2 "" V 8880 4400 30  0000 C CNN
+F 3 "" H 8950 4400 30  0000 C CNN
+	1    8950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR2
+U 1 1 563A95C5
+P 9600 3200
+F 0 "#PWR2" H 9600 3050 50  0001 C CNN
+F 1 "+5V" H 9600 3340 50  0000 C CNN
+F 2 "" H 9600 3200 60  0000 C CNN
+F 3 "" H 9600 3200 60  0000 C CNN
+	1    9600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 563A95CB
+P 11800 4550
+F 0 "#PWR7" H 11800 4400 50  0001 C CNN
+F 1 "+5V" H 11800 4690 50  0000 C CNN
+F 2 "" H 11800 4550 60  0000 C CNN
+F 3 "" H 11800 4550 60  0000 C CNN
+	1    11800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LS74 U3
+U 1 1 563B0EDD
+P 11000 7700
+F 0 "U3" H 10600 8550 60  0000 C CNN
+F 1 "SN74LS74" H 10750 7150 60  0000 C CNN
+F 2 "" H 11000 7700 60  0000 C CNN
+F 3 "" H 11000 7700 60  0000 C CNN
+	1    11000 7700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D59
+U 1 1 563B0EE3
+P 1900 5900
+F 0 "D59" H 1900 6000 50  0000 C CNN
+F 1 "LED" H 1900 5800 50  0000 C CNN
+F 2 "" H 1900 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1900 5900 60  0001 C CNN
+	1    1900 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D60
+U 1 1 563B0EE9
+P 2200 5900
+F 0 "D60" H 2200 6000 50  0000 C CNN
+F 1 "LED" H 2200 5800 50  0000 C CNN
+F 2 "" H 2200 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2200 5900 60  0001 C CNN
+	1    2200 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D57
+U 1 1 563B0EEF
+P 1300 5900
+F 0 "D57" H 1300 6000 50  0000 C CNN
+F 1 "LED" H 1300 5800 50  0000 C CNN
+F 2 "" H 1300 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1300 5900 60  0001 C CNN
+	1    1300 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D58
+U 1 1 563B0EF5
+P 1600 5900
+F 0 "D58" H 1600 6000 50  0000 C CNN
+F 1 "LED" H 1600 5800 50  0000 C CNN
+F 2 "" H 1600 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1600 5900 60  0001 C CNN
+	1    1600 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R29
+U 1 1 563B0EFB
+P 1750 6350
+F 0 "R29" V 1830 6350 50  0000 C CNN
+F 1 "100" V 1750 6350 50  0000 C CNN
+F 2 "" V 1680 6350 30  0000 C CNN
+F 3 "" H 1750 6350 30  0000 C CNN
+	1    1750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R36
+U 1 1 563B0F01
+P 1750 6750
+F 0 "R36" V 1830 6750 50  0000 C CNN
+F 1 "5" V 1750 6750 50  0000 C CNN
+F 2 "" V 1680 6750 30  0000 C CNN
+F 3 "" H 1750 6750 30  0000 C CNN
+	1    1750 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D63
+U 1 1 563B0F07
+P 3100 5900
+F 0 "D63" H 3100 6000 50  0000 C CNN
+F 1 "LED" H 3100 5800 50  0000 C CNN
+F 2 "" H 3100 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3100 5900 60  0001 C CNN
+	1    3100 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D64
+U 1 1 563B0F0D
+P 3400 5900
+F 0 "D64" H 3400 6000 50  0000 C CNN
+F 1 "LED" H 3400 5800 50  0000 C CNN
+F 2 "" H 3400 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3400 5900 60  0001 C CNN
+	1    3400 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D61
+U 1 1 563B0F13
+P 2500 5900
+F 0 "D61" H 2500 6000 50  0000 C CNN
+F 1 "LED" H 2500 5800 50  0000 C CNN
+F 2 "" H 2500 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2500 5900 60  0001 C CNN
+	1    2500 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D62
+U 1 1 563B0F19
+P 2800 5900
+F 0 "D62" H 2800 6000 50  0000 C CNN
+F 1 "LED" H 2800 5800 50  0000 C CNN
+F 2 "" H 2800 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2800 5900 60  0001 C CNN
+	1    2800 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R30
+U 1 1 563B0F1F
+P 2950 6350
+F 0 "R30" V 3030 6350 50  0000 C CNN
+F 1 "100" V 2950 6350 50  0000 C CNN
+F 2 "" V 2880 6350 30  0000 C CNN
+F 3 "" H 2950 6350 30  0000 C CNN
+	1    2950 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R37
+U 1 1 563B0F25
+P 2950 6750
+F 0 "R37" V 3030 6750 50  0000 C CNN
+F 1 "5" V 2950 6750 50  0000 C CNN
+F 2 "" V 2880 6750 30  0000 C CNN
+F 3 "" H 2950 6750 30  0000 C CNN
+	1    2950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D67
+U 1 1 563B0F2B
+P 4300 5900
+F 0 "D67" H 4300 6000 50  0000 C CNN
+F 1 "LED" H 4300 5800 50  0000 C CNN
+F 2 "" H 4300 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4300 5900 60  0001 C CNN
+	1    4300 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D68
+U 1 1 563B0F31
+P 4600 5900
+F 0 "D68" H 4600 6000 50  0000 C CNN
+F 1 "LED" H 4600 5800 50  0000 C CNN
+F 2 "" H 4600 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4600 5900 60  0001 C CNN
+	1    4600 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D65
+U 1 1 563B0F37
+P 3700 5900
+F 0 "D65" H 3700 6000 50  0000 C CNN
+F 1 "LED" H 3700 5800 50  0000 C CNN
+F 2 "" H 3700 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3700 5900 60  0001 C CNN
+	1    3700 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D66
+U 1 1 563B0F3D
+P 4000 5900
+F 0 "D66" H 4000 6000 50  0000 C CNN
+F 1 "LED" H 4000 5800 50  0000 C CNN
+F 2 "" H 4000 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4000 5900 60  0001 C CNN
+	1    4000 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R31
+U 1 1 563B0F43
+P 4150 6350
+F 0 "R31" V 4230 6350 50  0000 C CNN
+F 1 "100" V 4150 6350 50  0000 C CNN
+F 2 "" V 4080 6350 30  0000 C CNN
+F 3 "" H 4150 6350 30  0000 C CNN
+	1    4150 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R38
+U 1 1 563B0F49
+P 4150 6750
+F 0 "R38" V 4230 6750 50  0000 C CNN
+F 1 "5" V 4150 6750 50  0000 C CNN
+F 2 "" V 4080 6750 30  0000 C CNN
+F 3 "" H 4150 6750 30  0000 C CNN
+	1    4150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D71
+U 1 1 563B0F4F
+P 5500 5900
+F 0 "D71" H 5500 6000 50  0000 C CNN
+F 1 "LED" H 5500 5800 50  0000 C CNN
+F 2 "" H 5500 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5500 5900 60  0001 C CNN
+	1    5500 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D72
+U 1 1 563B0F55
+P 5800 5900
+F 0 "D72" H 5800 6000 50  0000 C CNN
+F 1 "LED" H 5800 5800 50  0000 C CNN
+F 2 "" H 5800 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5800 5900 60  0001 C CNN
+	1    5800 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D69
+U 1 1 563B0F5B
+P 4900 5900
+F 0 "D69" H 4900 6000 50  0000 C CNN
+F 1 "LED" H 4900 5800 50  0000 C CNN
+F 2 "" H 4900 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4900 5900 60  0001 C CNN
+	1    4900 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D70
+U 1 1 563B0F61
+P 5200 5900
+F 0 "D70" H 5200 6000 50  0000 C CNN
+F 1 "LED" H 5200 5800 50  0000 C CNN
+F 2 "" H 5200 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5200 5900 60  0001 C CNN
+	1    5200 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R32
+U 1 1 563B0F67
+P 5350 6350
+F 0 "R32" V 5430 6350 50  0000 C CNN
+F 1 "100" V 5350 6350 50  0000 C CNN
+F 2 "" V 5280 6350 30  0000 C CNN
+F 3 "" H 5350 6350 30  0000 C CNN
+	1    5350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R39
+U 1 1 563B0F6D
+P 5350 6750
+F 0 "R39" V 5430 6750 50  0000 C CNN
+F 1 "5" V 5350 6750 50  0000 C CNN
+F 2 "" V 5280 6750 30  0000 C CNN
+F 3 "" H 5350 6750 30  0000 C CNN
+	1    5350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D75
+U 1 1 563B0F73
+P 6700 5900
+F 0 "D75" H 6700 6000 50  0000 C CNN
+F 1 "LED" H 6700 5800 50  0000 C CNN
+F 2 "" H 6700 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6700 5900 60  0001 C CNN
+	1    6700 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D76
+U 1 1 563B0F79
+P 7000 5900
+F 0 "D76" H 7000 6000 50  0000 C CNN
+F 1 "LED" H 7000 5800 50  0000 C CNN
+F 2 "" H 7000 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7000 5900 60  0001 C CNN
+	1    7000 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D73
+U 1 1 563B0F7F
+P 6100 5900
+F 0 "D73" H 6100 6000 50  0000 C CNN
+F 1 "LED" H 6100 5800 50  0000 C CNN
+F 2 "" H 6100 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6100 5900 60  0001 C CNN
+	1    6100 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D74
+U 1 1 563B0F85
+P 6400 5900
+F 0 "D74" H 6400 6000 50  0000 C CNN
+F 1 "LED" H 6400 5800 50  0000 C CNN
+F 2 "" H 6400 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6400 5900 60  0001 C CNN
+	1    6400 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R33
+U 1 1 563B0F8B
+P 6550 6350
+F 0 "R33" V 6630 6350 50  0000 C CNN
+F 1 "100" V 6550 6350 50  0000 C CNN
+F 2 "" V 6480 6350 30  0000 C CNN
+F 3 "" H 6550 6350 30  0000 C CNN
+	1    6550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R40
+U 1 1 563B0F91
+P 6550 6750
+F 0 "R40" V 6630 6750 50  0000 C CNN
+F 1 "5" V 6550 6750 50  0000 C CNN
+F 2 "" V 6480 6750 30  0000 C CNN
+F 3 "" H 6550 6750 30  0000 C CNN
+	1    6550 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D79
+U 1 1 563B0F97
+P 7900 5900
+F 0 "D79" H 7900 6000 50  0000 C CNN
+F 1 "LED" H 7900 5800 50  0000 C CNN
+F 2 "" H 7900 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7900 5900 60  0001 C CNN
+	1    7900 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D80
+U 1 1 563B0F9D
+P 8200 5900
+F 0 "D80" H 8200 6000 50  0000 C CNN
+F 1 "LED" H 8200 5800 50  0000 C CNN
+F 2 "" H 8200 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8200 5900 60  0001 C CNN
+	1    8200 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D77
+U 1 1 563B0FA3
+P 7300 5900
+F 0 "D77" H 7300 6000 50  0000 C CNN
+F 1 "LED" H 7300 5800 50  0000 C CNN
+F 2 "" H 7300 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7300 5900 60  0001 C CNN
+	1    7300 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D78
+U 1 1 563B0FA9
+P 7600 5900
+F 0 "D78" H 7600 6000 50  0000 C CNN
+F 1 "LED" H 7600 5800 50  0000 C CNN
+F 2 "" H 7600 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7600 5900 60  0001 C CNN
+	1    7600 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R34
+U 1 1 563B0FAF
+P 7750 6350
+F 0 "R34" V 7830 6350 50  0000 C CNN
+F 1 "100" V 7750 6350 50  0000 C CNN
+F 2 "" V 7680 6350 30  0000 C CNN
+F 3 "" H 7750 6350 30  0000 C CNN
+	1    7750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R41
+U 1 1 563B0FB5
+P 7750 6750
+F 0 "R41" V 7830 6750 50  0000 C CNN
+F 1 "5" V 7750 6750 50  0000 C CNN
+F 2 "" V 7680 6750 30  0000 C CNN
+F 3 "" H 7750 6750 30  0000 C CNN
+	1    7750 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D83
+U 1 1 563B0FBB
+P 9100 5900
+F 0 "D83" H 9100 6000 50  0000 C CNN
+F 1 "LED" H 9100 5800 50  0000 C CNN
+F 2 "" H 9100 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9100 5900 60  0001 C CNN
+	1    9100 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D84
+U 1 1 563B0FC1
+P 9400 5900
+F 0 "D84" H 9400 6000 50  0000 C CNN
+F 1 "LED" H 9400 5800 50  0000 C CNN
+F 2 "" H 9400 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9400 5900 60  0001 C CNN
+	1    9400 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D81
+U 1 1 563B0FC7
+P 8500 5900
+F 0 "D81" H 8500 6000 50  0000 C CNN
+F 1 "LED" H 8500 5800 50  0000 C CNN
+F 2 "" H 8500 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8500 5900 60  0001 C CNN
+	1    8500 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D82
+U 1 1 563B0FCD
+P 8800 5900
+F 0 "D82" H 8800 6000 50  0000 C CNN
+F 1 "LED" H 8800 5800 50  0000 C CNN
+F 2 "" H 8800 5900 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8800 5900 60  0001 C CNN
+	1    8800 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R35
+U 1 1 563B0FD3
+P 8950 6350
+F 0 "R35" V 9030 6350 50  0000 C CNN
+F 1 "100" V 8950 6350 50  0000 C CNN
+F 2 "" V 8880 6350 30  0000 C CNN
+F 3 "" H 8950 6350 30  0000 C CNN
+	1    8950 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R42
+U 1 1 563B0FD9
+P 8950 6750
+F 0 "R42" V 9030 6750 50  0000 C CNN
+F 1 "5" V 8950 6750 50  0000 C CNN
+F 2 "" V 8880 6750 30  0000 C CNN
+F 3 "" H 8950 6750 30  0000 C CNN
+	1    8950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR3
+U 1 1 563B106A
+P 9600 5550
+F 0 "#PWR3" H 9600 5400 50  0001 C CNN
+F 1 "+5V" H 9600 5690 50  0000 C CNN
+F 2 "" H 9600 5550 60  0000 C CNN
+F 3 "" H 9600 5550 60  0000 C CNN
+	1    9600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR9
+U 1 1 563B1070
+P 11800 6900
+F 0 "#PWR9" H 11800 6750 50  0001 C CNN
+F 1 "+5V" H 11800 7040 50  0000 C CNN
+F 2 "" H 11800 6900 60  0000 C CNN
+F 3 "" H 11800 6900 60  0000 C CNN
+	1    11800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LS74 U4
+U 1 1 563B1082
+P 11000 10100
+F 0 "U4" H 10600 10950 60  0000 C CNN
+F 1 "SN74LS74" H 10750 9550 60  0000 C CNN
+F 2 "" H 11000 10100 60  0000 C CNN
+F 3 "" H 11000 10100 60  0000 C CNN
+	1    11000 10100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D87
+U 1 1 563B1088
+P 1900 8300
+F 0 "D87" H 1900 8400 50  0000 C CNN
+F 1 "LED" H 1900 8200 50  0000 C CNN
+F 2 "" H 1900 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1900 8300 60  0001 C CNN
+	1    1900 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D88
+U 1 1 563B108E
+P 2200 8300
+F 0 "D88" H 2200 8400 50  0000 C CNN
+F 1 "LED" H 2200 8200 50  0000 C CNN
+F 2 "" H 2200 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2200 8300 60  0001 C CNN
+	1    2200 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D85
+U 1 1 563B1094
+P 1300 8300
+F 0 "D85" H 1300 8400 50  0000 C CNN
+F 1 "LED" H 1300 8200 50  0000 C CNN
+F 2 "" H 1300 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1300 8300 60  0001 C CNN
+	1    1300 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D86
+U 1 1 563B109A
+P 1600 8300
+F 0 "D86" H 1600 8400 50  0000 C CNN
+F 1 "LED" H 1600 8200 50  0000 C CNN
+F 2 "" H 1600 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 1600 8300 60  0001 C CNN
+	1    1600 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R43
+U 1 1 563B10A0
+P 1750 8750
+F 0 "R43" V 1830 8750 50  0000 C CNN
+F 1 "100" V 1750 8750 50  0000 C CNN
+F 2 "" V 1680 8750 30  0000 C CNN
+F 3 "" H 1750 8750 30  0000 C CNN
+	1    1750 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R50
+U 1 1 563B10A6
+P 1750 9150
+F 0 "R50" V 1830 9150 50  0000 C CNN
+F 1 "5" V 1750 9150 50  0000 C CNN
+F 2 "" V 1680 9150 30  0000 C CNN
+F 3 "" H 1750 9150 30  0000 C CNN
+	1    1750 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D91
+U 1 1 563B10AC
+P 3100 8300
+F 0 "D91" H 3100 8400 50  0000 C CNN
+F 1 "LED" H 3100 8200 50  0000 C CNN
+F 2 "" H 3100 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3100 8300 60  0001 C CNN
+	1    3100 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D92
+U 1 1 563B10B2
+P 3400 8300
+F 0 "D92" H 3400 8400 50  0000 C CNN
+F 1 "LED" H 3400 8200 50  0000 C CNN
+F 2 "" H 3400 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3400 8300 60  0001 C CNN
+	1    3400 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D89
+U 1 1 563B10B8
+P 2500 8300
+F 0 "D89" H 2500 8400 50  0000 C CNN
+F 1 "LED" H 2500 8200 50  0000 C CNN
+F 2 "" H 2500 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2500 8300 60  0001 C CNN
+	1    2500 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D90
+U 1 1 563B10BE
+P 2800 8300
+F 0 "D90" H 2800 8400 50  0000 C CNN
+F 1 "LED" H 2800 8200 50  0000 C CNN
+F 2 "" H 2800 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 2800 8300 60  0001 C CNN
+	1    2800 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R44
+U 1 1 563B10C4
+P 2950 8750
+F 0 "R44" V 3030 8750 50  0000 C CNN
+F 1 "100" V 2950 8750 50  0000 C CNN
+F 2 "" V 2880 8750 30  0000 C CNN
+F 3 "" H 2950 8750 30  0000 C CNN
+	1    2950 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 563B10CA
+P 2950 9150
+F 0 "R51" V 3030 9150 50  0000 C CNN
+F 1 "5" V 2950 9150 50  0000 C CNN
+F 2 "" V 2880 9150 30  0000 C CNN
+F 3 "" H 2950 9150 30  0000 C CNN
+	1    2950 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D95
+U 1 1 563B10D0
+P 4300 8300
+F 0 "D95" H 4300 8400 50  0000 C CNN
+F 1 "LED" H 4300 8200 50  0000 C CNN
+F 2 "" H 4300 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4300 8300 60  0001 C CNN
+	1    4300 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D96
+U 1 1 563B10D6
+P 4600 8300
+F 0 "D96" H 4600 8400 50  0000 C CNN
+F 1 "LED" H 4600 8200 50  0000 C CNN
+F 2 "" H 4600 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4600 8300 60  0001 C CNN
+	1    4600 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D93
+U 1 1 563B10DC
+P 3700 8300
+F 0 "D93" H 3700 8400 50  0000 C CNN
+F 1 "LED" H 3700 8200 50  0000 C CNN
+F 2 "" H 3700 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 3700 8300 60  0001 C CNN
+	1    3700 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D94
+U 1 1 563B10E2
+P 4000 8300
+F 0 "D94" H 4000 8400 50  0000 C CNN
+F 1 "LED" H 4000 8200 50  0000 C CNN
+F 2 "" H 4000 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4000 8300 60  0001 C CNN
+	1    4000 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R45
+U 1 1 563B10E8
+P 4150 8750
+F 0 "R45" V 4230 8750 50  0000 C CNN
+F 1 "100" V 4150 8750 50  0000 C CNN
+F 2 "" V 4080 8750 30  0000 C CNN
+F 3 "" H 4150 8750 30  0000 C CNN
+	1    4150 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R52
+U 1 1 563B10EE
+P 4150 9150
+F 0 "R52" V 4230 9150 50  0000 C CNN
+F 1 "5" V 4150 9150 50  0000 C CNN
+F 2 "" V 4080 9150 30  0000 C CNN
+F 3 "" H 4150 9150 30  0000 C CNN
+	1    4150 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D99
+U 1 1 563B10F4
+P 5500 8300
+F 0 "D99" H 5500 8400 50  0000 C CNN
+F 1 "LED" H 5500 8200 50  0000 C CNN
+F 2 "" H 5500 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5500 8300 60  0001 C CNN
+	1    5500 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D100
+U 1 1 563B10FA
+P 5800 8300
+F 0 "D100" H 5800 8400 50  0000 C CNN
+F 1 "LED" H 5800 8200 50  0000 C CNN
+F 2 "" H 5800 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5800 8300 60  0001 C CNN
+	1    5800 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D97
+U 1 1 563B1100
+P 4900 8300
+F 0 "D97" H 4900 8400 50  0000 C CNN
+F 1 "LED" H 4900 8200 50  0000 C CNN
+F 2 "" H 4900 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 4900 8300 60  0001 C CNN
+	1    4900 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D98
+U 1 1 563B1106
+P 5200 8300
+F 0 "D98" H 5200 8400 50  0000 C CNN
+F 1 "LED" H 5200 8200 50  0000 C CNN
+F 2 "" H 5200 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 5200 8300 60  0001 C CNN
+	1    5200 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R46
+U 1 1 563B110C
+P 5350 8750
+F 0 "R46" V 5430 8750 50  0000 C CNN
+F 1 "100" V 5350 8750 50  0000 C CNN
+F 2 "" V 5280 8750 30  0000 C CNN
+F 3 "" H 5350 8750 30  0000 C CNN
+	1    5350 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R53
+U 1 1 563B1112
+P 5350 9150
+F 0 "R53" V 5430 9150 50  0000 C CNN
+F 1 "5" V 5350 9150 50  0000 C CNN
+F 2 "" V 5280 9150 30  0000 C CNN
+F 3 "" H 5350 9150 30  0000 C CNN
+	1    5350 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D103
+U 1 1 563B1118
+P 6700 8300
+F 0 "D103" H 6700 8400 50  0000 C CNN
+F 1 "LED" H 6700 8200 50  0000 C CNN
+F 2 "" H 6700 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6700 8300 60  0001 C CNN
+	1    6700 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D104
+U 1 1 563B111E
+P 7000 8300
+F 0 "D104" H 7000 8400 50  0000 C CNN
+F 1 "LED" H 7000 8200 50  0000 C CNN
+F 2 "" H 7000 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7000 8300 60  0001 C CNN
+	1    7000 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D101
+U 1 1 563B1124
+P 6100 8300
+F 0 "D101" H 6100 8400 50  0000 C CNN
+F 1 "LED" H 6100 8200 50  0000 C CNN
+F 2 "" H 6100 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6100 8300 60  0001 C CNN
+	1    6100 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D102
+U 1 1 563B112A
+P 6400 8300
+F 0 "D102" H 6400 8400 50  0000 C CNN
+F 1 "LED" H 6400 8200 50  0000 C CNN
+F 2 "" H 6400 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 6400 8300 60  0001 C CNN
+	1    6400 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R47
+U 1 1 563B1130
+P 6550 8750
+F 0 "R47" V 6630 8750 50  0000 C CNN
+F 1 "100" V 6550 8750 50  0000 C CNN
+F 2 "" V 6480 8750 30  0000 C CNN
+F 3 "" H 6550 8750 30  0000 C CNN
+	1    6550 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R54
+U 1 1 563B1136
+P 6550 9150
+F 0 "R54" V 6630 9150 50  0000 C CNN
+F 1 "5" V 6550 9150 50  0000 C CNN
+F 2 "" V 6480 9150 30  0000 C CNN
+F 3 "" H 6550 9150 30  0000 C CNN
+	1    6550 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D107
+U 1 1 563B113C
+P 7900 8300
+F 0 "D107" H 7900 8400 50  0000 C CNN
+F 1 "LED" H 7900 8200 50  0000 C CNN
+F 2 "" H 7900 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7900 8300 60  0001 C CNN
+	1    7900 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D108
+U 1 1 563B1142
+P 8200 8300
+F 0 "D108" H 8200 8400 50  0000 C CNN
+F 1 "LED" H 8200 8200 50  0000 C CNN
+F 2 "" H 8200 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8200 8300 60  0001 C CNN
+	1    8200 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D105
+U 1 1 563B1148
+P 7300 8300
+F 0 "D105" H 7300 8400 50  0000 C CNN
+F 1 "LED" H 7300 8200 50  0000 C CNN
+F 2 "" H 7300 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7300 8300 60  0001 C CNN
+	1    7300 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D106
+U 1 1 563B114E
+P 7600 8300
+F 0 "D106" H 7600 8400 50  0000 C CNN
+F 1 "LED" H 7600 8200 50  0000 C CNN
+F 2 "" H 7600 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 7600 8300 60  0001 C CNN
+	1    7600 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R48
+U 1 1 563B1154
+P 7750 8750
+F 0 "R48" V 7830 8750 50  0000 C CNN
+F 1 "100" V 7750 8750 50  0000 C CNN
+F 2 "" V 7680 8750 30  0000 C CNN
+F 3 "" H 7750 8750 30  0000 C CNN
+	1    7750 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R55
+U 1 1 563B115A
+P 7750 9150
+F 0 "R55" V 7830 9150 50  0000 C CNN
+F 1 "5" V 7750 9150 50  0000 C CNN
+F 2 "" V 7680 9150 30  0000 C CNN
+F 3 "" H 7750 9150 30  0000 C CNN
+	1    7750 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D111
+U 1 1 563B1160
+P 9100 8300
+F 0 "D111" H 9100 8400 50  0000 C CNN
+F 1 "LED" H 9100 8200 50  0000 C CNN
+F 2 "" H 9100 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9100 8300 60  0001 C CNN
+	1    9100 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D112
+U 1 1 563B1166
+P 9400 8300
+F 0 "D112" H 9400 8400 50  0000 C CNN
+F 1 "LED" H 9400 8200 50  0000 C CNN
+F 2 "" H 9400 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 9400 8300 60  0001 C CNN
+	1    9400 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D109
+U 1 1 563B116C
+P 8500 8300
+F 0 "D109" H 8500 8400 50  0000 C CNN
+F 1 "LED" H 8500 8200 50  0000 C CNN
+F 2 "" H 8500 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8500 8300 60  0001 C CNN
+	1    8500 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D110
+U 1 1 563B1172
+P 8800 8300
+F 0 "D110" H 8800 8400 50  0000 C CNN
+F 1 "LED" H 8800 8200 50  0000 C CNN
+F 2 "" H 8800 8300 60  0000 C CNN
+F 3 "http://www.mouser.com/ProductDetail/OSRAM-Opto-Semiconductors/LB-Q39G-L2N2-35-1/?qs=sGAEpiMZZMvyj6n1w4pZD1g1n2w%2ff0SUqTDpYaGkyrE%3d" H 8800 8300 60  0001 C CNN
+	1    8800 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R49
+U 1 1 563B1178
+P 8950 8750
+F 0 "R49" V 9030 8750 50  0000 C CNN
+F 1 "100" V 8950 8750 50  0000 C CNN
+F 2 "" V 8880 8750 30  0000 C CNN
+F 3 "" H 8950 8750 30  0000 C CNN
+	1    8950 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R56
+U 1 1 563B117E
+P 8950 9150
+F 0 "R56" V 9030 9150 50  0000 C CNN
+F 1 "5" V 8950 9150 50  0000 C CNN
+F 2 "" V 8880 9150 30  0000 C CNN
+F 3 "" H 8950 9150 30  0000 C CNN
+	1    8950 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR4
+U 1 1 563B120F
+P 9600 7950
+F 0 "#PWR4" H 9600 7800 50  0001 C CNN
+F 1 "+5V" H 9600 8090 50  0000 C CNN
+F 2 "" H 9600 7950 60  0000 C CNN
+F 3 "" H 9600 7950 60  0000 C CNN
+	1    9600 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR11
+U 1 1 563B1215
+P 11800 9300
+F 0 "#PWR11" H 11800 9150 50  0001 C CNN
+F 1 "+5V" H 11800 9440 50  0000 C CNN
+F 2 "" H 11800 9300 60  0000 C CNN
+F 3 "" H 11800 9300 60  0000 C CNN
+	1    11800 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR6
+U 1 1 563DB829
+P 11800 3550
+F 0 "#PWR6" H 11800 3300 50  0001 C CNN
+F 1 "GNDD" H 11800 3400 50  0000 C CNN
+F 2 "" H 11800 3550 60  0000 C CNN
+F 3 "" H 11800 3550 60  0000 C CNN
+	1    11800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR8
+U 1 1 563DD6FE
+P 11800 5950
+F 0 "#PWR8" H 11800 5700 50  0001 C CNN
+F 1 "GNDD" H 11800 5800 50  0000 C CNN
+F 2 "" H 11800 5950 60  0000 C CNN
+F 3 "" H 11800 5950 60  0000 C CNN
+	1    11800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR10
+U 1 1 563E3CE4
+P 11800 8300
+F 0 "#PWR10" H 11800 8050 50  0001 C CNN
+F 1 "GNDD" H 11800 8150 50  0000 C CNN
+F 2 "" H 11800 8300 60  0000 C CNN
+F 3 "" H 11800 8300 60  0000 C CNN
+	1    11800 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR12
+U 1 1 563E6B6B
+P 11800 10700
+F 0 "#PWR12" H 11800 10450 50  0001 C CNN
+F 1 "GNDD" H 11800 10550 50  0000 C CNN
+F 2 "" H 11800 10700 60  0000 C CNN
+F 3 "" H 11800 10700 60  0000 C CNN
+	1    11800 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4520B U6
+U 1 1 56400362
+P 14750 4050
+F 0 "U6" H 14300 3550 60  0000 C CNN
+F 1 "CD4520B" H 14450 4550 60  0000 C CNN
+F 2 "" H 14500 4050 60  0000 C CNN
+F 3 "" H 14500 4050 60  0000 C CNN
+	1    14750 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR20
+U 1 1 5640C30E
+P 15400 4950
+F 0 "#PWR20" H 15400 4700 50  0001 C CNN
+F 1 "GNDD" H 15400 4800 50  0000 C CNN
+F 2 "" H 15400 4950 60  0000 C CNN
+F 3 "" H 15400 4950 60  0000 C CNN
+	1    15400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR18
+U 1 1 5640F6F3
+P 14150 3350
+F 0 "#PWR18" H 14150 3200 50  0001 C CNN
+F 1 "+5V" H 14150 3490 50  0000 C CNN
+F 2 "" H 14150 3350 60  0000 C CNN
+F 3 "" H 14150 3350 60  0000 C CNN
+	1    14150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R57
+U 1 1 56419C41
+P 11900 2450
+F 0 "R57" V 11980 2450 50  0000 C CNN
+F 1 "10k" V 11900 2450 50  0000 C CNN
+F 2 "" V 11830 2450 30  0000 C CNN
+F 3 "" H 11900 2450 30  0000 C CNN
+	1    11900 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R58
+U 1 1 5641A0A6
+P 12250 2550
+F 0 "R58" V 12330 2550 50  0000 C CNN
+F 1 "10k" V 12250 2550 50  0000 C CNN
+F 2 "" V 12180 2550 30  0000 C CNN
+F 3 "" H 12250 2550 30  0000 C CNN
+	1    12250 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R59
+U 1 1 5641A2C9
+P 11900 2650
+F 0 "R59" V 11980 2650 50  0000 C CNN
+F 1 "10k" V 11900 2650 50  0000 C CNN
+F 2 "" V 11830 2650 30  0000 C CNN
+F 3 "" H 11900 2650 30  0000 C CNN
+	1    11900 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 5641F231
+P 12850 2100
+F 0 "P1" H 12850 2300 50  0000 C CNN
+F 1 "S1 LT" V 12950 2100 50  0000 C CNN
+F 2 "" H 12850 2100 60  0000 C CNN
+F 3 "" H 12850 2100 60  0000 C CNN
+	1    12850 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR13
+U 1 1 564227D2
+P 12950 2400
+F 0 "#PWR13" H 12950 2150 50  0001 C CNN
+F 1 "GNDD" H 12950 2250 50  0000 C CNN
+F 2 "" H 12950 2400 60  0000 C CNN
+F 3 "" H 12950 2400 60  0000 C CNN
+	1    12950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R60
+U 1 1 564342B0
+P 11900 4850
+F 0 "R60" V 11980 4850 50  0000 C CNN
+F 1 "10k" V 11900 4850 50  0000 C CNN
+F 2 "" V 11830 4850 30  0000 C CNN
+F 3 "" H 11900 4850 30  0000 C CNN
+	1    11900 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R61
+U 1 1 564342B6
+P 12250 4950
+F 0 "R61" V 12330 4950 50  0000 C CNN
+F 1 "10k" V 12250 4950 50  0000 C CNN
+F 2 "" V 12180 4950 30  0000 C CNN
+F 3 "" H 12250 4950 30  0000 C CNN
+	1    12250 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R62
+U 1 1 564342BC
+P 11900 5050
+F 0 "R62" V 11980 5050 50  0000 C CNN
+F 1 "10k" V 11900 5050 50  0000 C CNN
+F 2 "" V 11830 5050 30  0000 C CNN
+F 3 "" H 11900 5050 30  0000 C CNN
+	1    11900 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 564342C7
+P 12850 4500
+F 0 "P2" H 12850 4700 50  0000 C CNN
+F 1 "S2 LT" V 12950 4500 50  0000 C CNN
+F 2 "" H 12850 4500 60  0000 C CNN
+F 3 "" H 12850 4500 60  0000 C CNN
+	1    12850 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR14
+U 1 1 564342D1
+P 12950 4800
+F 0 "#PWR14" H 12950 4550 50  0001 C CNN
+F 1 "GNDD" H 12950 4650 50  0000 C CNN
+F 2 "" H 12950 4800 60  0000 C CNN
+F 3 "" H 12950 4800 60  0000 C CNN
+	1    12950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R63
+U 1 1 5643B2FE
+P 12050 7200
+F 0 "R63" V 12130 7200 50  0000 C CNN
+F 1 "10k" V 12050 7200 50  0000 C CNN
+F 2 "" V 11980 7200 30  0000 C CNN
+F 3 "" H 12050 7200 30  0000 C CNN
+	1    12050 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R64
+U 1 1 5643B304
+P 12400 7300
+F 0 "R64" V 12480 7300 50  0000 C CNN
+F 1 "10k" V 12400 7300 50  0000 C CNN
+F 2 "" V 12330 7300 30  0000 C CNN
+F 3 "" H 12400 7300 30  0000 C CNN
+	1    12400 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R65
+U 1 1 5643B30A
+P 12050 7400
+F 0 "R65" V 12130 7400 50  0000 C CNN
+F 1 "10k" V 12050 7400 50  0000 C CNN
+F 2 "" V 11980 7400 30  0000 C CNN
+F 3 "" H 12050 7400 30  0000 C CNN
+	1    12050 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 5643B313
+P 13000 6850
+F 0 "P3" H 13000 7050 50  0000 C CNN
+F 1 "S3 LT" V 13100 6850 50  0000 C CNN
+F 2 "" H 13000 6850 60  0000 C CNN
+F 3 "" H 13000 6850 60  0000 C CNN
+	1    13000 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR15
+U 1 1 5643B31D
+P 13100 7150
+F 0 "#PWR15" H 13100 6900 50  0001 C CNN
+F 1 "GNDD" H 13100 7000 50  0000 C CNN
+F 2 "" H 13100 7150 60  0000 C CNN
+F 3 "" H 13100 7150 60  0000 C CNN
+	1    13100 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R66
+U 1 1 56447AEB
+P 12200 9600
+F 0 "R66" V 12280 9600 50  0000 C CNN
+F 1 "10k" V 12200 9600 50  0000 C CNN
+F 2 "" V 12130 9600 30  0000 C CNN
+F 3 "" H 12200 9600 30  0000 C CNN
+	1    12200 9600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R67
+U 1 1 56447AF1
+P 12550 9700
+F 0 "R67" V 12630 9700 50  0000 C CNN
+F 1 "10k" V 12550 9700 50  0000 C CNN
+F 2 "" V 12480 9700 30  0000 C CNN
+F 3 "" H 12550 9700 30  0000 C CNN
+	1    12550 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R68
+U 1 1 56447AF7
+P 12200 9800
+F 0 "R68" V 12280 9800 50  0000 C CNN
+F 1 "10k" V 12200 9800 50  0000 C CNN
+F 2 "" V 12130 9800 30  0000 C CNN
+F 3 "" H 12200 9800 30  0000 C CNN
+	1    12200 9800
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 56447B00
+P 13150 9250
+F 0 "P4" H 13150 9450 50  0000 C CNN
+F 1 "S4 LT" V 13250 9250 50  0000 C CNN
+F 2 "" H 13150 9250 60  0000 C CNN
+F 3 "" H 13150 9250 60  0000 C CNN
+	1    13150 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR16
+U 1 1 56447B0A
+P 13250 9550
+F 0 "#PWR16" H 13250 9300 50  0001 C CNN
+F 1 "GNDD" H 13250 9400 50  0000 C CNN
+F 2 "" H 13250 9550 60  0000 C CNN
+F 3 "" H 13250 9550 60  0000 C CNN
+	1    13250 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P5
+U 1 1 564501E6
+P 13700 9250
+F 0 "P5" H 13700 9450 50  0000 C CNN
+F 1 "S4 ZERO CTRL" V 13800 9250 50  0000 C CNN
+F 2 "" H 13700 9250 60  0000 C CNN
+F 3 "" H 13700 9250 60  0000 C CNN
+	1    13700 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR17
+U 1 1 56450442
+P 13800 9550
+F 0 "#PWR17" H 13800 9300 50  0001 C CNN
+F 1 "GNDD" H 13800 9400 50  0000 C CNN
+F 2 "" H 13800 9550 60  0000 C CNN
+F 3 "" H 13800 9550 60  0000 C CNN
+	1    13800 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4520B U7
+U 1 1 56452272
+P 14750 8800
+F 0 "U7" H 14300 8300 60  0000 C CNN
+F 1 "CD4520B" H 14450 9300 60  0000 C CNN
+F 2 "" H 14500 8800 60  0000 C CNN
+F 3 "" H 14500 8800 60  0000 C CNN
+	1    14750 8800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR21
+U 1 1 56452280
+P 15400 9700
+F 0 "#PWR21" H 15400 9450 50  0001 C CNN
+F 1 "GNDD" H 15400 9550 50  0000 C CNN
+F 2 "" H 15400 9700 60  0000 C CNN
+F 3 "" H 15400 9700 60  0000 C CNN
+	1    15400 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR19
+U 1 1 56452292
+P 14150 8100
+F 0 "#PWR19" H 14150 7950 50  0001 C CNN
+F 1 "+5V" H 14150 8240 50  0000 C CNN
+F 2 "" H 14150 8100 60  0000 C CNN
+F 3 "" H 14150 8100 60  0000 C CNN
+	1    14150 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1350 1300 1400
+Wire Wire Line
+	1300 1400 2200 1400
+Wire Wire Line
+	1750 1400 1750 1450
+Wire Wire Line
+	1600 1350 1600 1400
+Connection ~ 1600 1400
+Wire Wire Line
+	1900 1400 1900 1350
+Connection ~ 1750 1400
+Wire Wire Line
+	2200 1400 2200 1350
+Connection ~ 1900 1400
+Wire Wire Line
+	1750 1750 1750 1850
+Wire Wire Line
+	1300 950  1300 900 
+Wire Wire Line
+	1300 900  9600 900 
+Wire Wire Line
+	1600 900  1600 950 
+Wire Wire Line
+	1900 900  1900 950 
+Connection ~ 1600 900 
+Wire Wire Line
+	2200 900  2200 950 
+Connection ~ 1900 900 
+Wire Wire Line
+	2500 1350 2500 1400
+Wire Wire Line
+	2500 1400 3400 1400
+Wire Wire Line
+	2950 1400 2950 1450
+Wire Wire Line
+	2800 1350 2800 1400
+Connection ~ 2800 1400
+Wire Wire Line
+	3100 1400 3100 1350
+Connection ~ 2950 1400
+Wire Wire Line
+	3400 1400 3400 1350
+Connection ~ 3100 1400
+Wire Wire Line
+	2950 1750 2950 1850
+Wire Wire Line
+	2500 900  2500 950 
+Wire Wire Line
+	2800 900  2800 950 
+Wire Wire Line
+	3100 900  3100 950 
+Connection ~ 2800 900 
+Wire Wire Line
+	3400 900  3400 950 
+Connection ~ 3100 900 
+Wire Wire Line
+	3700 1350 3700 1400
+Wire Wire Line
+	3700 1400 4600 1400
+Wire Wire Line
+	4150 1400 4150 1450
+Wire Wire Line
+	4000 1350 4000 1400
+Connection ~ 4000 1400
+Wire Wire Line
+	4300 1400 4300 1350
+Connection ~ 4150 1400
+Wire Wire Line
+	4600 1400 4600 1350
+Connection ~ 4300 1400
+Wire Wire Line
+	4150 1750 4150 1850
+Wire Wire Line
+	3700 900  3700 950 
+Wire Wire Line
+	4000 900  4000 950 
+Wire Wire Line
+	4300 900  4300 950 
+Connection ~ 4000 900 
+Wire Wire Line
+	4600 900  4600 950 
+Connection ~ 4300 900 
+Wire Wire Line
+	4900 1350 4900 1400
+Wire Wire Line
+	4900 1400 5800 1400
+Wire Wire Line
+	5350 1400 5350 1450
+Wire Wire Line
+	5200 1350 5200 1400
+Connection ~ 5200 1400
+Wire Wire Line
+	5500 1400 5500 1350
+Connection ~ 5350 1400
+Wire Wire Line
+	5800 1400 5800 1350
+Connection ~ 5500 1400
+Wire Wire Line
+	5350 1750 5350 1850
+Wire Wire Line
+	4900 900  4900 950 
+Wire Wire Line
+	5200 900  5200 950 
+Wire Wire Line
+	5500 900  5500 950 
+Connection ~ 5200 900 
+Wire Wire Line
+	5800 900  5800 950 
+Connection ~ 5500 900 
+Wire Wire Line
+	6100 1350 6100 1400
+Wire Wire Line
+	6100 1400 7000 1400
+Wire Wire Line
+	6550 1400 6550 1450
+Wire Wire Line
+	6400 1350 6400 1400
+Connection ~ 6400 1400
+Wire Wire Line
+	6700 1400 6700 1350
+Connection ~ 6550 1400
+Wire Wire Line
+	7000 1400 7000 1350
+Connection ~ 6700 1400
+Wire Wire Line
+	6550 1750 6550 1850
+Wire Wire Line
+	6100 900  6100 950 
+Wire Wire Line
+	6400 900  6400 950 
+Wire Wire Line
+	6700 900  6700 950 
+Connection ~ 6400 900 
+Wire Wire Line
+	7000 900  7000 950 
+Connection ~ 6700 900 
+Wire Wire Line
+	7300 1350 7300 1400
+Wire Wire Line
+	7300 1400 8200 1400
+Wire Wire Line
+	7750 1400 7750 1450
+Wire Wire Line
+	7600 1350 7600 1400
+Connection ~ 7600 1400
+Wire Wire Line
+	7900 1400 7900 1350
+Connection ~ 7750 1400
+Wire Wire Line
+	8200 1400 8200 1350
+Connection ~ 7900 1400
+Wire Wire Line
+	7750 1750 7750 1850
+Wire Wire Line
+	7300 900  7300 950 
+Wire Wire Line
+	7600 900  7600 950 
+Wire Wire Line
+	7900 900  7900 950 
+Connection ~ 7600 900 
+Wire Wire Line
+	8200 900  8200 950 
+Connection ~ 7900 900 
+Wire Wire Line
+	8500 1350 8500 1400
+Wire Wire Line
+	8500 1400 9400 1400
+Wire Wire Line
+	8950 1400 8950 1450
+Wire Wire Line
+	8800 1350 8800 1400
+Connection ~ 8800 1400
+Wire Wire Line
+	9100 1400 9100 1350
+Connection ~ 8950 1400
+Wire Wire Line
+	9400 1400 9400 1350
+Connection ~ 9100 1400
+Wire Wire Line
+	8950 1750 8950 1850
+Wire Wire Line
+	8500 900  8500 950 
+Wire Wire Line
+	8800 900  8800 950 
+Wire Wire Line
+	9100 900  9100 950 
+Connection ~ 8800 900 
+Wire Wire Line
+	9400 900  9400 950 
+Connection ~ 9100 900 
+Connection ~ 2500 900 
+Connection ~ 2200 900 
+Connection ~ 3700 900 
+Connection ~ 3400 900 
+Connection ~ 4900 900 
+Connection ~ 4600 900 
+Connection ~ 6100 900 
+Connection ~ 5800 900 
+Connection ~ 7300 900 
+Connection ~ 7000 900 
+Connection ~ 8500 900 
+Connection ~ 8200 900 
+Wire Wire Line
+	10350 2250 1750 2250
+Wire Wire Line
+	1750 2250 1750 2150
+Wire Wire Line
+	10350 2350 2950 2350
+Wire Wire Line
+	2950 2350 2950 2150
+Wire Wire Line
+	10350 2450 4150 2450
+Wire Wire Line
+	4150 2450 4150 2150
+Wire Wire Line
+	10350 2550 5350 2550
+Wire Wire Line
+	5350 2550 5350 2150
+Wire Wire Line
+	10350 2650 6550 2650
+Wire Wire Line
+	6550 2650 6550 2150
+Wire Wire Line
+	7750 2750 10350 2750
+Wire Wire Line
+	7750 2750 7750 2150
+Wire Wire Line
+	10350 2850 8950 2850
+Wire Wire Line
+	8950 2850 8950 2150
+Wire Wire Line
+	11650 3350 11800 3350
+Wire Wire Line
+	11800 3350 11800 3550
+Wire Wire Line
+	11650 2250 12500 2250
+Wire Wire Line
+	11800 2250 11800 2150
+Wire Wire Line
+	9600 900  9600 800 
+Connection ~ 9400 900 
+Wire Wire Line
+	1300 3750 1300 3800
+Wire Wire Line
+	1300 3800 2200 3800
+Wire Wire Line
+	1750 3800 1750 3850
+Wire Wire Line
+	1600 3750 1600 3800
+Connection ~ 1600 3800
+Wire Wire Line
+	1900 3800 1900 3750
+Connection ~ 1750 3800
+Wire Wire Line
+	2200 3800 2200 3750
+Connection ~ 1900 3800
+Wire Wire Line
+	1750 4150 1750 4250
+Wire Wire Line
+	1300 3350 1300 3300
+Wire Wire Line
+	1300 3300 9600 3300
+Wire Wire Line
+	1600 3300 1600 3350
+Wire Wire Line
+	1900 3300 1900 3350
+Connection ~ 1600 3300
+Wire Wire Line
+	2200 3300 2200 3350
+Connection ~ 1900 3300
+Wire Wire Line
+	2500 3750 2500 3800
+Wire Wire Line
+	2500 3800 3400 3800
+Wire Wire Line
+	2950 3800 2950 3850
+Wire Wire Line
+	2800 3750 2800 3800
+Connection ~ 2800 3800
+Wire Wire Line
+	3100 3800 3100 3750
+Connection ~ 2950 3800
+Wire Wire Line
+	3400 3800 3400 3750
+Connection ~ 3100 3800
+Wire Wire Line
+	2950 4150 2950 4250
+Wire Wire Line
+	2500 3300 2500 3350
+Wire Wire Line
+	2800 3300 2800 3350
+Wire Wire Line
+	3100 3300 3100 3350
+Connection ~ 2800 3300
+Wire Wire Line
+	3400 3300 3400 3350
+Connection ~ 3100 3300
+Wire Wire Line
+	3700 3750 3700 3800
+Wire Wire Line
+	3700 3800 4600 3800
+Wire Wire Line
+	4150 3800 4150 3850
+Wire Wire Line
+	4000 3750 4000 3800
+Connection ~ 4000 3800
+Wire Wire Line
+	4300 3800 4300 3750
+Connection ~ 4150 3800
+Wire Wire Line
+	4600 3800 4600 3750
+Connection ~ 4300 3800
+Wire Wire Line
+	4150 4150 4150 4250
+Wire Wire Line
+	3700 3300 3700 3350
+Wire Wire Line
+	4000 3300 4000 3350
+Wire Wire Line
+	4300 3300 4300 3350
+Connection ~ 4000 3300
+Wire Wire Line
+	4600 3300 4600 3350
+Connection ~ 4300 3300
+Wire Wire Line
+	4900 3750 4900 3800
+Wire Wire Line
+	4900 3800 5800 3800
+Wire Wire Line
+	5350 3800 5350 3850
+Wire Wire Line
+	5200 3750 5200 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	5500 3800 5500 3750
+Connection ~ 5350 3800
+Wire Wire Line
+	5800 3800 5800 3750
+Connection ~ 5500 3800
+Wire Wire Line
+	5350 4150 5350 4250
+Wire Wire Line
+	4900 3300 4900 3350
+Wire Wire Line
+	5200 3300 5200 3350
+Wire Wire Line
+	5500 3300 5500 3350
+Connection ~ 5200 3300
+Wire Wire Line
+	5800 3300 5800 3350
+Connection ~ 5500 3300
+Wire Wire Line
+	6100 3750 6100 3800
+Wire Wire Line
+	6100 3800 7000 3800
+Wire Wire Line
+	6550 3800 6550 3850
+Wire Wire Line
+	6400 3750 6400 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6700 3800 6700 3750
+Connection ~ 6550 3800
+Wire Wire Line
+	7000 3800 7000 3750
+Connection ~ 6700 3800
+Wire Wire Line
+	6550 4150 6550 4250
+Wire Wire Line
+	6100 3300 6100 3350
+Wire Wire Line
+	6400 3300 6400 3350
+Wire Wire Line
+	6700 3300 6700 3350
+Connection ~ 6400 3300
+Wire Wire Line
+	7000 3300 7000 3350
+Connection ~ 6700 3300
+Wire Wire Line
+	7300 3750 7300 3800
+Wire Wire Line
+	7300 3800 8200 3800
+Wire Wire Line
+	7750 3800 7750 3850
+Wire Wire Line
+	7600 3750 7600 3800
+Connection ~ 7600 3800
+Wire Wire Line
+	7900 3800 7900 3750
+Connection ~ 7750 3800
+Wire Wire Line
+	8200 3800 8200 3750
+Connection ~ 7900 3800
+Wire Wire Line
+	7750 4150 7750 4250
+Wire Wire Line
+	7300 3300 7300 3350
+Wire Wire Line
+	7600 3300 7600 3350
+Wire Wire Line
+	7900 3300 7900 3350
+Connection ~ 7600 3300
+Wire Wire Line
+	8200 3300 8200 3350
+Connection ~ 7900 3300
+Wire Wire Line
+	8500 3750 8500 3800
+Wire Wire Line
+	8500 3800 9400 3800
+Wire Wire Line
+	8950 3800 8950 3850
+Wire Wire Line
+	8800 3750 8800 3800
+Connection ~ 8800 3800
+Wire Wire Line
+	9100 3800 9100 3750
+Connection ~ 8950 3800
+Wire Wire Line
+	9400 3800 9400 3750
+Connection ~ 9100 3800
+Wire Wire Line
+	8950 4150 8950 4250
+Wire Wire Line
+	8500 3300 8500 3350
+Wire Wire Line
+	8800 3300 8800 3350
+Wire Wire Line
+	9100 3300 9100 3350
+Connection ~ 8800 3300
+Wire Wire Line
+	9400 3300 9400 3350
+Connection ~ 9100 3300
+Connection ~ 2500 3300
+Connection ~ 2200 3300
+Connection ~ 3700 3300
+Connection ~ 3400 3300
+Connection ~ 4900 3300
+Connection ~ 4600 3300
+Connection ~ 6100 3300
+Connection ~ 5800 3300
+Connection ~ 7300 3300
+Connection ~ 7000 3300
+Connection ~ 8500 3300
+Connection ~ 8200 3300
+Wire Wire Line
+	10350 4650 1750 4650
+Wire Wire Line
+	1750 4650 1750 4550
+Wire Wire Line
+	10350 4750 2950 4750
+Wire Wire Line
+	2950 4750 2950 4550
+Wire Wire Line
+	10350 4850 4150 4850
+Wire Wire Line
+	4150 4850 4150 4550
+Wire Wire Line
+	10350 4950 5350 4950
+Wire Wire Line
+	5350 4950 5350 4550
+Wire Wire Line
+	10350 5050 6550 5050
+Wire Wire Line
+	6550 5050 6550 4550
+Wire Wire Line
+	7750 5150 10350 5150
+Wire Wire Line
+	7750 5150 7750 4550
+Wire Wire Line
+	10350 5250 8950 5250
+Wire Wire Line
+	8950 5250 8950 4550
+Wire Wire Line
+	11650 5750 11800 5750
+Wire Wire Line
+	11800 5750 11800 5950
+Wire Wire Line
+	11650 4650 12500 4650
+Wire Wire Line
+	11800 4550 11800 4650
+Wire Wire Line
+	9600 3300 9600 3200
+Connection ~ 9400 3300
+Wire Wire Line
+	1300 6100 1300 6150
+Wire Wire Line
+	1300 6150 2200 6150
+Wire Wire Line
+	1750 6150 1750 6200
+Wire Wire Line
+	1600 6100 1600 6150
+Connection ~ 1600 6150
+Wire Wire Line
+	1900 6150 1900 6100
+Connection ~ 1750 6150
+Wire Wire Line
+	2200 6150 2200 6100
+Connection ~ 1900 6150
+Wire Wire Line
+	1750 6500 1750 6600
+Wire Wire Line
+	1300 5700 1300 5650
+Wire Wire Line
+	1300 5650 9600 5650
+Wire Wire Line
+	1600 5650 1600 5700
+Wire Wire Line
+	1900 5650 1900 5700
+Connection ~ 1600 5650
+Wire Wire Line
+	2200 5650 2200 5700
+Connection ~ 1900 5650
+Wire Wire Line
+	2500 6100 2500 6150
+Wire Wire Line
+	2500 6150 3400 6150
+Wire Wire Line
+	2950 6150 2950 6200
+Wire Wire Line
+	2800 6100 2800 6150
+Connection ~ 2800 6150
+Wire Wire Line
+	3100 6150 3100 6100
+Connection ~ 2950 6150
+Wire Wire Line
+	3400 6150 3400 6100
+Connection ~ 3100 6150
+Wire Wire Line
+	2950 6500 2950 6600
+Wire Wire Line
+	2500 5650 2500 5700
+Wire Wire Line
+	2800 5650 2800 5700
+Wire Wire Line
+	3100 5650 3100 5700
+Connection ~ 2800 5650
+Wire Wire Line
+	3400 5650 3400 5700
+Connection ~ 3100 5650
+Wire Wire Line
+	3700 6100 3700 6150
+Wire Wire Line
+	3700 6150 4600 6150
+Wire Wire Line
+	4150 6150 4150 6200
+Wire Wire Line
+	4000 6100 4000 6150
+Connection ~ 4000 6150
+Wire Wire Line
+	4300 6150 4300 6100
+Connection ~ 4150 6150
+Wire Wire Line
+	4600 6150 4600 6100
+Connection ~ 4300 6150
+Wire Wire Line
+	4150 6500 4150 6600
+Wire Wire Line
+	3700 5650 3700 5700
+Wire Wire Line
+	4000 5650 4000 5700
+Wire Wire Line
+	4300 5650 4300 5700
+Connection ~ 4000 5650
+Wire Wire Line
+	4600 5650 4600 5700
+Connection ~ 4300 5650
+Wire Wire Line
+	4900 6100 4900 6150
+Wire Wire Line
+	4900 6150 5800 6150
+Wire Wire Line
+	5350 6150 5350 6200
+Wire Wire Line
+	5200 6100 5200 6150
+Connection ~ 5200 6150
+Wire Wire Line
+	5500 6150 5500 6100
+Connection ~ 5350 6150
+Wire Wire Line
+	5800 6150 5800 6100
+Connection ~ 5500 6150
+Wire Wire Line
+	5350 6500 5350 6600
+Wire Wire Line
+	4900 5650 4900 5700
+Wire Wire Line
+	5200 5650 5200 5700
+Wire Wire Line
+	5500 5650 5500 5700
+Connection ~ 5200 5650
+Wire Wire Line
+	5800 5650 5800 5700
+Connection ~ 5500 5650
+Wire Wire Line
+	6100 6100 6100 6150
+Wire Wire Line
+	6100 6150 7000 6150
+Wire Wire Line
+	6550 6150 6550 6200
+Wire Wire Line
+	6400 6100 6400 6150
+Connection ~ 6400 6150
+Wire Wire Line
+	6700 6150 6700 6100
+Connection ~ 6550 6150
+Wire Wire Line
+	7000 6150 7000 6100
+Connection ~ 6700 6150
+Wire Wire Line
+	6550 6500 6550 6600
+Wire Wire Line
+	6100 5650 6100 5700
+Wire Wire Line
+	6400 5650 6400 5700
+Wire Wire Line
+	6700 5650 6700 5700
+Connection ~ 6400 5650
+Wire Wire Line
+	7000 5650 7000 5700
+Connection ~ 6700 5650
+Wire Wire Line
+	7300 6100 7300 6150
+Wire Wire Line
+	7300 6150 8200 6150
+Wire Wire Line
+	7750 6150 7750 6200
+Wire Wire Line
+	7600 6100 7600 6150
+Connection ~ 7600 6150
+Wire Wire Line
+	7900 6150 7900 6100
+Connection ~ 7750 6150
+Wire Wire Line
+	8200 6150 8200 6100
+Connection ~ 7900 6150
+Wire Wire Line
+	7750 6500 7750 6600
+Wire Wire Line
+	7300 5650 7300 5700
+Wire Wire Line
+	7600 5650 7600 5700
+Wire Wire Line
+	7900 5650 7900 5700
+Connection ~ 7600 5650
+Wire Wire Line
+	8200 5650 8200 5700
+Connection ~ 7900 5650
+Wire Wire Line
+	8500 6100 8500 6150
+Wire Wire Line
+	8500 6150 9400 6150
+Wire Wire Line
+	8950 6150 8950 6200
+Wire Wire Line
+	8800 6100 8800 6150
+Connection ~ 8800 6150
+Wire Wire Line
+	9100 6150 9100 6100
+Connection ~ 8950 6150
+Wire Wire Line
+	9400 6150 9400 6100
+Connection ~ 9100 6150
+Wire Wire Line
+	8950 6500 8950 6600
+Wire Wire Line
+	8500 5650 8500 5700
+Wire Wire Line
+	8800 5650 8800 5700
+Wire Wire Line
+	9100 5650 9100 5700
+Connection ~ 8800 5650
+Wire Wire Line
+	9400 5650 9400 5700
+Connection ~ 9100 5650
+Connection ~ 2500 5650
+Connection ~ 2200 5650
+Connection ~ 3700 5650
+Connection ~ 3400 5650
+Connection ~ 4900 5650
+Connection ~ 4600 5650
+Connection ~ 6100 5650
+Connection ~ 5800 5650
+Connection ~ 7300 5650
+Connection ~ 7000 5650
+Connection ~ 8500 5650
+Connection ~ 8200 5650
+Wire Wire Line
+	10350 7000 1750 7000
+Wire Wire Line
+	1750 7000 1750 6900
+Wire Wire Line
+	10350 7100 2950 7100
+Wire Wire Line
+	2950 7100 2950 6900
+Wire Wire Line
+	10350 7200 4150 7200
+Wire Wire Line
+	4150 7200 4150 6900
+Wire Wire Line
+	10350 7300 5350 7300
+Wire Wire Line
+	5350 7300 5350 6900
+Wire Wire Line
+	10350 7400 6550 7400
+Wire Wire Line
+	6550 7400 6550 6900
+Wire Wire Line
+	7750 7500 10350 7500
+Wire Wire Line
+	7750 7500 7750 6900
+Wire Wire Line
+	10350 7600 8950 7600
+Wire Wire Line
+	8950 7600 8950 6900
+Wire Wire Line
+	11650 8100 11800 8100
+Wire Wire Line
+	11800 8100 11800 8300
+Wire Wire Line
+	11650 7000 12650 7000
+Wire Wire Line
+	11800 7000 11800 6900
+Wire Wire Line
+	9600 5650 9600 5550
+Connection ~ 9400 5650
+Wire Wire Line
+	1300 8500 1300 8550
+Wire Wire Line
+	1300 8550 2200 8550
+Wire Wire Line
+	1750 8550 1750 8600
+Wire Wire Line
+	1600 8500 1600 8550
+Connection ~ 1600 8550
+Wire Wire Line
+	1900 8550 1900 8500
+Connection ~ 1750 8550
+Wire Wire Line
+	2200 8550 2200 8500
+Connection ~ 1900 8550
+Wire Wire Line
+	1750 8900 1750 9000
+Wire Wire Line
+	1300 8100 1300 8050
+Wire Wire Line
+	1300 8050 9600 8050
+Wire Wire Line
+	1600 8050 1600 8100
+Wire Wire Line
+	1900 8050 1900 8100
+Connection ~ 1600 8050
+Wire Wire Line
+	2200 8050 2200 8100
+Connection ~ 1900 8050
+Wire Wire Line
+	2500 8500 2500 8550
+Wire Wire Line
+	2500 8550 3400 8550
+Wire Wire Line
+	2950 8550 2950 8600
+Wire Wire Line
+	2800 8500 2800 8550
+Connection ~ 2800 8550
+Wire Wire Line
+	3100 8550 3100 8500
+Connection ~ 2950 8550
+Wire Wire Line
+	3400 8550 3400 8500
+Connection ~ 3100 8550
+Wire Wire Line
+	2950 8900 2950 9000
+Wire Wire Line
+	2500 8050 2500 8100
+Wire Wire Line
+	2800 8050 2800 8100
+Wire Wire Line
+	3100 8050 3100 8100
+Connection ~ 2800 8050
+Wire Wire Line
+	3400 8050 3400 8100
+Connection ~ 3100 8050
+Wire Wire Line
+	3700 8500 3700 8550
+Wire Wire Line
+	3700 8550 4600 8550
+Wire Wire Line
+	4150 8550 4150 8600
+Wire Wire Line
+	4000 8500 4000 8550
+Connection ~ 4000 8550
+Wire Wire Line
+	4300 8550 4300 8500
+Connection ~ 4150 8550
+Wire Wire Line
+	4600 8550 4600 8500
+Connection ~ 4300 8550
+Wire Wire Line
+	4150 8900 4150 9000
+Wire Wire Line
+	3700 8050 3700 8100
+Wire Wire Line
+	4000 8050 4000 8100
+Wire Wire Line
+	4300 8050 4300 8100
+Connection ~ 4000 8050
+Wire Wire Line
+	4600 8050 4600 8100
+Connection ~ 4300 8050
+Wire Wire Line
+	4900 8500 4900 8550
+Wire Wire Line
+	4900 8550 5800 8550
+Wire Wire Line
+	5350 8550 5350 8600
+Wire Wire Line
+	5200 8500 5200 8550
+Connection ~ 5200 8550
+Wire Wire Line
+	5500 8550 5500 8500
+Connection ~ 5350 8550
+Wire Wire Line
+	5800 8550 5800 8500
+Connection ~ 5500 8550
+Wire Wire Line
+	5350 8900 5350 9000
+Wire Wire Line
+	4900 8050 4900 8100
+Wire Wire Line
+	5200 8050 5200 8100
+Wire Wire Line
+	5500 8050 5500 8100
+Connection ~ 5200 8050
+Wire Wire Line
+	5800 8050 5800 8100
+Connection ~ 5500 8050
+Wire Wire Line
+	6100 8500 6100 8550
+Wire Wire Line
+	6100 8550 7000 8550
+Wire Wire Line
+	6550 8550 6550 8600
+Wire Wire Line
+	6400 8500 6400 8550
+Connection ~ 6400 8550
+Wire Wire Line
+	6700 8550 6700 8500
+Connection ~ 6550 8550
+Wire Wire Line
+	7000 8550 7000 8500
+Connection ~ 6700 8550
+Wire Wire Line
+	6550 8900 6550 9000
+Wire Wire Line
+	6100 8050 6100 8100
+Wire Wire Line
+	6400 8050 6400 8100
+Wire Wire Line
+	6700 8050 6700 8100
+Connection ~ 6400 8050
+Wire Wire Line
+	7000 8050 7000 8100
+Connection ~ 6700 8050
+Wire Wire Line
+	7300 8500 7300 8550
+Wire Wire Line
+	7300 8550 8200 8550
+Wire Wire Line
+	7750 8550 7750 8600
+Wire Wire Line
+	7600 8500 7600 8550
+Connection ~ 7600 8550
+Wire Wire Line
+	7900 8550 7900 8500
+Connection ~ 7750 8550
+Wire Wire Line
+	8200 8550 8200 8500
+Connection ~ 7900 8550
+Wire Wire Line
+	7750 8900 7750 9000
+Wire Wire Line
+	7300 8050 7300 8100
+Wire Wire Line
+	7600 8050 7600 8100
+Wire Wire Line
+	7900 8050 7900 8100
+Connection ~ 7600 8050
+Wire Wire Line
+	8200 8050 8200 8100
+Connection ~ 7900 8050
+Wire Wire Line
+	8500 8500 8500 8550
+Wire Wire Line
+	8500 8550 9400 8550
+Wire Wire Line
+	8950 8550 8950 8600
+Wire Wire Line
+	8800 8500 8800 8550
+Connection ~ 8800 8550
+Wire Wire Line
+	9100 8550 9100 8500
+Connection ~ 8950 8550
+Wire Wire Line
+	9400 8550 9400 8500
+Connection ~ 9100 8550
+Wire Wire Line
+	8950 8900 8950 9000
+Wire Wire Line
+	8500 8050 8500 8100
+Wire Wire Line
+	8800 8050 8800 8100
+Wire Wire Line
+	9100 8050 9100 8100
+Connection ~ 8800 8050
+Wire Wire Line
+	9400 8050 9400 8100
+Connection ~ 9100 8050
+Connection ~ 2500 8050
+Connection ~ 2200 8050
+Connection ~ 3700 8050
+Connection ~ 3400 8050
+Connection ~ 4900 8050
+Connection ~ 4600 8050
+Connection ~ 6100 8050
+Connection ~ 5800 8050
+Connection ~ 7300 8050
+Connection ~ 7000 8050
+Connection ~ 8500 8050
+Connection ~ 8200 8050
+Wire Wire Line
+	10350 9400 1750 9400
+Wire Wire Line
+	1750 9400 1750 9300
+Wire Wire Line
+	10350 9500 2950 9500
+Wire Wire Line
+	2950 9500 2950 9300
+Wire Wire Line
+	10350 9600 4150 9600
+Wire Wire Line
+	4150 9600 4150 9300
+Wire Wire Line
+	10350 9700 5350 9700
+Wire Wire Line
+	5350 9700 5350 9300
+Wire Wire Line
+	10350 9800 6550 9800
+Wire Wire Line
+	6550 9800 6550 9300
+Wire Wire Line
+	7750 9900 10350 9900
+Wire Wire Line
+	7750 9900 7750 9300
+Wire Wire Line
+	10350 10000 8950 10000
+Wire Wire Line
+	8950 10000 8950 9300
+Wire Wire Line
+	11650 10500 11800 10500
+Wire Wire Line
+	11800 10500 11800 10700
+Wire Wire Line
+	11650 9400 12800 9400
+Wire Wire Line
+	11800 9400 11800 9300
+Wire Wire Line
+	9600 8050 9600 7950
+Connection ~ 9400 8050
+Wire Wire Line
+	14600 4750 14600 5250
+Wire Wire Line
+	11650 5250 15400 5250
+Wire Wire Line
+	14700 4750 14700 5350
+Wire Wire Line
+	14700 5350 11650 5350
+Wire Wire Line
+	14800 4750 14800 5450
+Wire Wire Line
+	11650 5450 15400 5450
+Wire Wire Line
+	14900 4750 14900 5550
+Wire Wire Line
+	14900 5550 11650 5550
+Wire Wire Line
+	15100 4750 15100 4850
+Wire Wire Line
+	15100 4850 15400 4850
+Wire Wire Line
+	15400 4850 15400 4950
+Wire Wire Line
+	14600 3350 14600 3150
+Wire Wire Line
+	11650 3150 15450 3150
+Wire Wire Line
+	11650 3050 14700 3050
+Wire Wire Line
+	14700 3050 14700 3350
+Wire Wire Line
+	14800 3350 14800 2950
+Wire Wire Line
+	11650 2950 15450 2950
+Wire Wire Line
+	11650 2850 14900 2850
+Wire Wire Line
+	14900 2850 14900 3350
+Wire Wire Line
+	14150 3350 14400 3350
+Wire Wire Line
+	12100 2550 11650 2550
+Wire Wire Line
+	12500 2550 12400 2550
+Wire Wire Line
+	12500 2250 12500 2550
+Connection ~ 11800 2250
+Wire Wire Line
+	11650 2450 11750 2450
+Wire Wire Line
+	12050 2450 12850 2450
+Wire Wire Line
+	12850 2450 12850 2300
+Wire Wire Line
+	12750 2300 12500 2300
+Connection ~ 12500 2300
+Wire Wire Line
+	12950 2300 12950 2400
+Wire Wire Line
+	11650 2650 11750 2650
+Connection ~ 12500 2350
+Wire Wire Line
+	12050 2650 12700 2650
+Wire Wire Line
+	12700 2650 12700 2350
+Wire Wire Line
+	12700 2350 12500 2350
+Wire Wire Line
+	12100 4950 11650 4950
+Wire Wire Line
+	12500 4950 12400 4950
+Wire Wire Line
+	12500 4650 12500 4950
+Wire Wire Line
+	12050 4850 12850 4850
+Wire Wire Line
+	12850 4850 12850 4700
+Wire Wire Line
+	12750 4700 12500 4700
+Connection ~ 12500 4700
+Wire Wire Line
+	12950 4700 12950 4800
+Connection ~ 12500 4750
+Wire Wire Line
+	12050 5050 12700 5050
+Wire Wire Line
+	12700 5050 12700 4750
+Wire Wire Line
+	12700 4750 12500 4750
+Wire Wire Line
+	11650 4850 11750 4850
+Wire Wire Line
+	11650 5050 11750 5050
+Connection ~ 11800 4650
+Wire Wire Line
+	11650 7300 12250 7300
+Wire Wire Line
+	12650 7300 12550 7300
+Wire Wire Line
+	12650 7000 12650 7300
+Wire Wire Line
+	12200 7200 13000 7200
+Wire Wire Line
+	13000 7200 13000 7050
+Wire Wire Line
+	12900 7050 12650 7050
+Connection ~ 12650 7050
+Wire Wire Line
+	13100 7050 13100 7150
+Connection ~ 12650 7100
+Wire Wire Line
+	12200 7400 12850 7400
+Wire Wire Line
+	12850 7400 12850 7100
+Wire Wire Line
+	12850 7100 12650 7100
+Connection ~ 11800 7000
+Wire Wire Line
+	11900 7200 11650 7200
+Wire Wire Line
+	11900 7400 11650 7400
+Wire Wire Line
+	11650 9700 12400 9700
+Wire Wire Line
+	12800 9700 12700 9700
+Wire Wire Line
+	12800 9400 12800 9700
+Wire Wire Line
+	12350 9600 13150 9600
+Wire Wire Line
+	13150 9600 13150 9450
+Wire Wire Line
+	13050 9450 12800 9450
+Connection ~ 12800 9450
+Wire Wire Line
+	13250 9450 13250 9550
+Wire Wire Line
+	11650 9600 12050 9600
+Wire Wire Line
+	11650 9800 12050 9800
+Connection ~ 11800 9400
+Wire Wire Line
+	13800 9450 13800 9550
+Wire Wire Line
+	12350 9800 13700 9800
+Wire Wire Line
+	13700 9800 13700 9450
+Wire Wire Line
+	13600 9450 13600 9500
+Wire Wire Line
+	13600 9500 12800 9500
+Connection ~ 12800 9500
+Wire Wire Line
+	14600 9500 14600 10000
+Wire Wire Line
+	14600 10000 11650 10000
+Wire Wire Line
+	14700 9500 14700 10100
+Wire Wire Line
+	11650 10100 15400 10100
+Wire Wire Line
+	14800 9500 14800 10200
+Wire Wire Line
+	14800 10200 11650 10200
+Wire Wire Line
+	14900 9500 14900 10300
+Wire Wire Line
+	14900 10300 11650 10300
+Wire Wire Line
+	15100 9500 15100 9600
+Wire Wire Line
+	15100 9600 15400 9600
+Wire Wire Line
+	15400 9600 15400 9700
+Wire Wire Line
+	14600 8100 14600 7900
+Wire Wire Line
+	11650 7900 15400 7900
+Wire Wire Line
+	11650 7800 15300 7800
+Wire Wire Line
+	14700 7800 14700 8100
+Wire Wire Line
+	14800 8100 14800 7700
+Wire Wire Line
+	11650 7700 15400 7700
+Wire Wire Line
+	11650 7600 14900 7600
+Wire Wire Line
+	14900 7600 14900 8100
+Wire Wire Line
+	14150 8100 14400 8100
+Text GLabel 14500 2600 1    60   Input ~ 0
+1:R
+Text GLabel 15000 2600 1    60   Input ~ 0
+1:U
+Wire Wire Line
+	14500 3350 14500 2600
+Wire Wire Line
+	15000 2600 15000 3350
+Text GLabel 14500 5800 3    60   Input ~ 0
+2:U
+Text GLabel 15000 5800 3    60   Input ~ 0
+2:R
+Wire Wire Line
+	14500 5800 14500 4750
+Wire Wire Line
+	15000 5800 15000 4750
+Text GLabel 15000 7300 1    60   Input ~ 0
+3:U
+Text GLabel 14500 7300 1    60   Input ~ 0
+3:R
+Wire Wire Line
+	14500 7300 14500 8100
+Wire Wire Line
+	15000 7300 15000 8100
+Text GLabel 15000 10600 3    60   Input ~ 0
+4:R
+Text GLabel 14500 10600 3    60   Input ~ 0
+4:U
+Wire Wire Line
+	14500 10600 14500 9500
+Wire Wire Line
+	15000 9500 15000 10600
+$Comp
+L 74LS08 U5
+U 1 1 565077EF
+P 16050 3050
+F 0 "U5" H 16050 3100 60  0000 C CNN
+F 1 "74LS08" H 16050 3000 60  0000 C CNN
+F 2 "" H 16050 3050 60  0000 C CNN
+F 3 "" H 16050 3050 60  0000 C CNN
+	1    16050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS08 U5
+U 3 1 565171FE
+P 16000 7800
+F 0 "U5" H 16000 7850 60  0000 C CNN
+F 1 "74LS08" H 16000 7750 60  0000 C CNN
+F 2 "" H 16000 7800 60  0000 C CNN
+F 3 "" H 16000 7800 60  0000 C CNN
+	3    16000 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS08 U5
+U 4 1 565185E7
+P 16000 10200
+F 0 "U5" H 16000 10250 60  0000 C CNN
+F 1 "74LS08" H 16000 10150 60  0000 C CNN
+F 2 "" H 16000 10200 60  0000 C CNN
+F 3 "" H 16000 10200 60  0000 C CNN
+	4    16000 10200
+	1    0    0    -1  
+$EndComp
+Connection ~ 14800 2950
+Connection ~ 14600 3150
+Connection ~ 14600 5250
+Connection ~ 14800 5450
+Connection ~ 14600 7900
+Connection ~ 14800 7700
+Connection ~ 14700 10100
+Wire Wire Line
+	15400 10300 15300 10300
+Wire Wire Line
+	15300 10300 15300 7800
+Connection ~ 14700 7800
+$Comp
+L D D113
+U 1 1 56527E88
+P 16900 2900
+F 0 "D113" H 16900 3000 50  0000 C CNN
+F 1 "D" H 16900 2800 50  0000 C CNN
+F 2 "" H 16900 2900 60  0000 C CNN
+F 3 "" H 16900 2900 60  0000 C CNN
+	1    16900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D114
+U 1 1 56528093
+P 16900 3200
+F 0 "D114" H 16900 3300 50  0000 C CNN
+F 1 "D" H 16900 3100 50  0000 C CNN
+F 2 "" H 16900 3200 60  0000 C CNN
+F 3 "" H 16900 3200 60  0000 C CNN
+	1    16900 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16650 2900 16650 3200
+Wire Wire Line
+	16650 2900 16750 2900
+Wire Wire Line
+	16650 3200 16750 3200
+Connection ~ 16650 3050
+Text GLabel 17200 2900 2    60   Input ~ 0
+1:R
+Text GLabel 17200 3200 2    60   Input ~ 0
+2:U
+Wire Wire Line
+	17050 3200 17200 3200
+Wire Wire Line
+	17050 2900 17200 2900
+$Comp
+L D D120
+U 1 1 565301DB
+P 16900 7650
+F 0 "D120" H 16900 7750 50  0000 C CNN
+F 1 "D" H 16900 7550 50  0000 C CNN
+F 2 "" H 16900 7650 60  0000 C CNN
+F 3 "" H 16900 7650 60  0000 C CNN
+	1    16900 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D121
+U 1 1 56530377
+P 16900 7950
+F 0 "D121" H 16900 8050 50  0000 C CNN
+F 1 "D" H 16900 7850 50  0000 C CNN
+F 2 "" H 16900 7950 60  0000 C CNN
+F 3 "" H 16900 7950 60  0000 C CNN
+	1    16900 7950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16600 7950 16750 7950
+Connection ~ 16600 7800
+Wire Wire Line
+	16600 7650 16750 7650
+Text GLabel 17200 7650 2    60   Input ~ 0
+3:R
+Text GLabel 17200 7950 2    60   Input ~ 0
+4:U
+Connection ~ 16600 5350
+Text GLabel 17200 5500 2    60   Input ~ 0
+3:U
+Text GLabel 17200 5200 2    60   Input ~ 0
+2:R
+Wire Wire Line
+	16600 5500 16750 5500
+Wire Wire Line
+	16600 5200 16750 5200
+$Comp
+L D D117
+U 1 1 5652E847
+P 16900 5500
+F 0 "D117" H 16900 5600 50  0000 C CNN
+F 1 "D" H 16900 5400 50  0000 C CNN
+F 2 "" H 16900 5500 60  0000 C CNN
+F 3 "" H 16900 5500 60  0000 C CNN
+	1    16900 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D116
+U 1 1 5652E435
+P 16900 5200
+F 0 "D116" H 16900 5300 50  0000 C CNN
+F 1 "D" H 16900 5100 50  0000 C CNN
+F 2 "" H 16900 5200 60  0000 C CNN
+F 3 "" H 16900 5200 60  0000 C CNN
+	1    16900 5200
+	-1   0    0    1   
+$EndComp
+Connection ~ 16600 10200
+Wire Wire Line
+	17050 5200 17200 5200
+Wire Wire Line
+	17050 5500 17200 5500
+Wire Wire Line
+	17050 7650 17200 7650
+Wire Wire Line
+	17200 7950 17050 7950
+$Comp
+L CD4060 U8
+U 1 1 5657195D
+P 19600 4050
+F 0 "U8" H 19400 3450 60  0000 C CNN
+F 1 "CD4060" H 19500 4450 60  0000 C CNN
+F 2 "" H 19650 4050 60  0000 C CNN
+F 3 "" H 19650 4050 60  0000 C CNN
+	1    19600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS08 U5
+U 2 1 5650D0A6
+P 16000 5350
+F 0 "U5" H 16000 5400 60  0000 C CNN
+F 1 "74LS08" H 16000 5300 60  0000 C CNN
+F 2 "" H 16000 5350 60  0000 C CNN
+F 3 "" H 16000 5350 60  0000 C CNN
+	2    16000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 5200 16600 5500
+Wire Wire Line
+	16600 7650 16600 7950
+Wire Wire Line
+	16600 10050 16600 10350
+$Comp
+L D D115
+U 1 1 565A1A56
+P 16900 10050
+F 0 "D115" H 16900 10150 50  0000 C CNN
+F 1 "D" H 16900 9950 50  0000 C CNN
+F 2 "" H 16900 10050 60  0000 C CNN
+F 3 "" H 16900 10050 60  0000 C CNN
+	1    16900 10050
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D118
+U 1 1 565A1A5C
+P 16900 10350
+F 0 "D118" H 16900 10450 50  0000 C CNN
+F 1 "D" H 16900 10250 50  0000 C CNN
+F 2 "" H 16900 10350 60  0000 C CNN
+F 3 "" H 16900 10350 60  0000 C CNN
+	1    16900 10350
+	-1   0    0    1   
+$EndComp
+Text GLabel 17200 10050 2    60   Input ~ 0
+3:R
+Text GLabel 17200 10350 2    60   Input ~ 0
+4:R
+Wire Wire Line
+	17050 10050 17200 10050
+Wire Wire Line
+	17200 10350 17050 10350
+Wire Wire Line
+	16600 10350 16750 10350
+Wire Wire Line
+	16750 10050 16600 10050
+$Comp
+L +5V #PWR25
+U 1 1 565BB01C
+P 20150 3750
+F 0 "#PWR25" H 20150 3600 50  0001 C CNN
+F 1 "+5V" H 20150 3890 50  0000 C CNN
+F 2 "" H 20150 3750 60  0000 C CNN
+F 3 "" H 20150 3750 60  0000 C CNN
+	1    20150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR22
+U 1 1 565BB1C8
+P 19600 4900
+F 0 "#PWR22" H 19600 4650 50  0001 C CNN
+F 1 "GNDD" H 19600 4750 50  0000 C CNN
+F 2 "" H 19600 4900 60  0000 C CNN
+F 3 "" H 19600 4900 60  0000 C CNN
+	1    19600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20050 3800 20150 3800
+Wire Wire Line
+	20150 3800 20150 3750
+$Comp
+L Crystal Y1
+U 1 1 565BBC52
+P 21150 3950
+F 0 "Y1" H 21150 4100 50  0000 C CNN
+F 1 "32.768 kHz" H 21150 3800 50  0000 C CNN
+F 2 "" H 21150 3950 60  0000 C CNN
+F 3 "" H 21150 3950 60  0000 C CNN
+	1    21150 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 565BBE1D
+P 20800 4200
+F 0 "C1" H 20825 4300 50  0000 L CNN
+F 1 "33pF" H 20825 4100 50  0000 L CNN
+F 2 "" H 20838 4050 30  0000 C CNN
+F 3 "" H 20800 4200 60  0000 C CNN
+	1    20800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 565BBFD6
+P 21550 4200
+F 0 "C3" H 21575 4300 50  0000 L CNN
+F 1 "33pF" H 21575 4100 50  0000 L CNN
+F 2 "" H 21588 4050 30  0000 C CNN
+F 3 "" H 21550 4200 60  0000 C CNN
+	1    21550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R71
+U 1 1 565BC18B
+P 21000 3500
+F 0 "R71" V 21080 3500 50  0000 C CNN
+F 1 "6.8M" V 21000 3500 50  0000 C CNN
+F 2 "" V 20930 3500 30  0000 C CNN
+F 3 "" H 21000 3500 30  0000 C CNN
+	1    21000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R75
+U 1 1 565BC410
+P 21400 3500
+F 0 "R75" V 21480 3500 50  0000 C CNN
+F 1 "6.8M" V 21400 3500 50  0000 C CNN
+F 2 "" V 21330 3500 30  0000 C CNN
+F 3 "" H 21400 3500 30  0000 C CNN
+	1    21400 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R70
+U 1 1 565BC6A9
+P 20800 3750
+F 0 "R70" V 20880 3750 50  0000 C CNN
+F 1 "330K" V 20800 3750 50  0000 C CNN
+F 2 "" V 20730 3750 30  0000 C CNN
+F 3 "" H 20800 3750 30  0000 C CNN
+	1    20800 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	21550 3950 21300 3950
+Wire Wire Line
+	21550 3250 21550 4050
+Connection ~ 21550 3950
+Wire Wire Line
+	21550 3250 20400 3250
+Wire Wire Line
+	20400 3250 20400 4300
+Wire Wire Line
+	20400 4300 20050 4300
+Connection ~ 21550 3500
+Wire Wire Line
+	21250 3500 21150 3500
+Wire Wire Line
+	20450 3500 20850 3500
+Wire Wire Line
+	20800 3500 20800 3600
+Wire Wire Line
+	20800 3900 20800 4050
+Wire Wire Line
+	21000 3950 20800 3950
+Connection ~ 20800 3950
+Wire Wire Line
+	20800 4350 20800 4750
+Wire Wire Line
+	21550 4750 21550 4350
+Connection ~ 20800 4750
+Wire Wire Line
+	20450 3500 20450 4400
+Wire Wire Line
+	20450 4400 20050 4400
+Connection ~ 20800 3500
+Wire Wire Line
+	20050 4200 20100 4200
+Wire Wire Line
+	20100 4200 20100 4750
+Wire Wire Line
+	19000 4750 21550 4750
+Wire Wire Line
+	19600 4750 19600 4900
+Wire Wire Line
+	19150 4500 19000 4500
+Wire Wire Line
+	19000 4500 19000 4750
+Connection ~ 19600 4750
+Connection ~ 20100 4750
+$Comp
+L R R69
+U 1 1 563E3E1F
+P 3050 11900
+F 0 "R69" V 3130 11900 50  0000 C CNN
+F 1 "100k" V 3050 11900 50  0000 C CNN
+F 2 "" V 2980 11900 30  0000 C CNN
+F 3 "" H 3050 11900 30  0000 C CNN
+	1    3050 11900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R72
+U 1 1 563E40B9
+P 4000 11900
+F 0 "R72" V 4080 11900 50  0000 C CNN
+F 1 "39" V 4000 11900 50  0000 C CNN
+F 2 "" V 3930 11900 30  0000 C CNN
+F 3 "" H 4000 11900 30  0000 C CNN
+	1    4000 11900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R73
+U 1 1 563E4367
+P 4000 12400
+F 0 "R73" V 4080 12400 50  0000 C CNN
+F 1 "39" V 4000 12400 50  0000 C CNN
+F 2 "" V 3930 12400 30  0000 C CNN
+F 3 "" H 4000 12400 30  0000 C CNN
+	1    4000 12400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R74
+U 1 1 563E4606
+P 4000 12900
+F 0 "R74" V 4080 12900 50  0000 C CNN
+F 1 "39" V 4000 12900 50  0000 C CNN
+F 2 "" V 3930 12900 30  0000 C CNN
+F 3 "" H 4000 12900 30  0000 C CNN
+	1    4000 12900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRANSISTOR_NPN Q1
+U 1 1 563EA652
+P 3900 13350
+F 0 "Q1" H 4050 13500 50  0000 L BNN
+F 1 "TRANSISTOR_NPN" H 4050 13150 50  0000 L BNN
+F 2 "SparkFun-SOT223" H 4400 13350 50  0001 C CNN
+F 3 "" H 3900 13350 60  0000 C CNN
+	1    3900 13350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 563F4A42
+P 3650 13650
+F 0 "C2" H 3675 13750 50  0000 L CNN
+F 1 "0.01uF" H 3675 13550 50  0000 L CNN
+F 2 "" H 3688 13500 30  0000 C CNN
+F 3 "" H 3650 13650 60  0000 C CNN
+	1    3650 13650
+	1    0    0    -1  
+$EndComp
+$Comp
+L THERMISTOR TH1
+U 1 1 563F4DCF
+P 3050 13750
+F 0 "TH1" V 3150 13800 50  0000 C CNN
+F 1 "100k" V 2950 13750 50  0000 C BNN
+F 2 "" H 3050 13750 60  0000 C CNN
+F 3 "" H 3050 13750 60  0000 C CNN
+	1    3050 13750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRIMPOT VR1
+U 1 1 563FA50C
+P 3050 12600
+F 0 "VR1" H 3150 12750 50  0000 L BNN
+F 1 "220k" H 3150 12450 50  0000 L BNN
+F 2 "SparkFun-3362U-2" H 3050 12400 50  0001 C CNN
+F 3 "" H 3050 12600 60  0000 C CNN
+	1    3050 12600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR23
+U 1 1 563FFFAC
+P 2400 11600
+F 0 "#PWR23" H 2400 11450 50  0001 C CNN
+F 1 "+5V" H 2400 11740 50  0000 C CNN
+F 2 "" H 2400 11600 60  0000 C CNN
+F 3 "" H 2400 11600 60  0000 C CNN
+	1    2400 11600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR24
+U 1 1 5640068E
+P 2400 14450
+F 0 "#PWR24" H 2400 14200 50  0001 C CNN
+F 1 "GNDD" H 2400 14300 50  0000 C CNN
+F 2 "" H 2400 14450 60  0000 C CNN
+F 3 "" H 2400 14450 60  0000 C CNN
+	1    2400 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 11600 2400 11750
+Wire Wire Line
+	2400 11750 4000 11750
+Connection ~ 3050 11750
+Wire Wire Line
+	3050 12050 3050 12400
+Wire Wire Line
+	2850 12600 2750 12600
+Wire Wire Line
+	2750 12600 2750 12200
+Wire Wire Line
+	2750 12200 3050 12200
+Connection ~ 3050 12200
+Wire Wire Line
+	3050 12800 3050 13500
+Wire Wire Line
+	3050 14000 3050 14300
+Wire Wire Line
+	2400 14300 4000 14300
+Wire Wire Line
+	2400 14300 2400 14450
+Wire Wire Line
+	3650 14300 3650 13800
+Connection ~ 3050 14300
+Wire Wire Line
+	4000 14300 4000 13550
+Connection ~ 3650 14300
+Wire Wire Line
+	4000 13150 4000 13050
+Wire Wire Line
+	4000 12750 4000 12550
+Wire Wire Line
+	4000 12250 4000 12050
+Wire Wire Line
+	3800 13350 3050 13350
+Connection ~ 3050 13350
+Wire Wire Line
+	3650 13500 3650 13350
+Connection ~ 3650 13350
+Wire Notes Line
+	1800 15100 1800 11150
+Wire Notes Line
+	1800 11150 4800 11150
+Wire Notes Line
+	4800 11150 4800 15100
+Wire Notes Line
+	4800 15100 1800 15100
+Text Notes 1850 15050 0    60   ~ 0
+This section is glued to Xtal body.\nParts here have no footprint on board\n
+$Comp
+L CONN_01X02 P6
+U 1 1 56428F94
+P 20250 2350
+F 0 "P6" H 20250 2500 50  0000 C CNN
+F 1 "OCXO Power" V 20350 2350 50  0000 C CNN
+F 2 "" H 20250 2350 60  0000 C CNN
+F 3 "" H 20250 2350 60  0000 C CNN
+	1    20250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR26
+U 1 1 5642C6D7
+P 19950 2250
+F 0 "#PWR26" H 19950 2100 50  0001 C CNN
+F 1 "+5V" H 19950 2390 50  0000 C CNN
+F 2 "" H 19950 2250 60  0000 C CNN
+F 3 "" H 19950 2250 60  0000 C CNN
+	1    19950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR27
+U 1 1 5642CC04
+P 19950 2450
+F 0 "#PWR27" H 19950 2200 50  0001 C CNN
+F 1 "GNDD" H 19950 2300 50  0000 C CNN
+F 2 "" H 19950 2450 60  0000 C CNN
+F 3 "" H 19950 2450 60  0000 C CNN
+	1    19950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20050 2300 19950 2300
+Wire Wire Line
+	19950 2300 19950 2250
+Wire Wire Line
+	20050 2400 19950 2400
+Wire Wire Line
+	19950 2400 19950 2450
+Text Notes 19850 3150 0    60   ~ 0
+Leave space around XTAL for OCXO components
+Wire Notes Line
+	21200 3700 21200 3200
+Text GLabel 18950 4000 0    60   Input ~ 0
+2_Hz
+Wire Wire Line
+	18950 4000 19150 4000
+Text Notes 19900 1950 0    60   ~ 0
+Place near Xtal\n<40mA
+$Comp
+L CD40103B U?
+U 1 1 5649DC3A
+P 19650 5950
+F 0 "U?" H 19350 5450 60  0000 C CNN
+F 1 "CD40103B" H 19550 6450 60  0000 C CNN
+F 2 "" H 19350 6050 60  0000 C CNN
+F 3 "" H 19350 6050 60  0000 C CNN
+	1    19650 5950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
